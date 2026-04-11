@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LeadershipPro — Wireframes</title>
+<style>
+  /* ========== RESET & BASE ========== */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; color: #424242; background: #f5f5f5; line-height: 1.6; }
+  h1, h2, h3, h4, h5 { font-family: Georgia, 'Times New Roman', serif; color: #212121; font-weight: 700; }
+  a { color: #424242; text-decoration: none; cursor: pointer; }
+  a:hover { text-decoration: underline; }
+  img { max-width: 100%; }
+  input, select, textarea, button { font-family: inherit; font-size: inherit; }
+
+  /* ========== DESIGN TOKENS ========== */
+  :root {
+    --gray-50: #fafafa; --gray-100: #f5f5f5; --gray-200: #e0e0e0; --gray-300: #bdbdbd;
+    --gray-400: #9e9e9e; --gray-500: #757575; --gray-600: #616161; --gray-700: #424242;
+    --gray-800: #212121; --gray-900: #121212;
+    --max-width: 1200px; --radius: 4px;
+  }
+
+  /* ========== WIREFRAME TAB NAV ========== */
+  .wireframe-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 9999; background: #212121; display: flex; align-items: center; padding: 0 16px; height: 44px; gap: 4px; overflow-x: auto; }
+  .wireframe-nav span { color: #9e9e9e; font-size: 11px; margin-right: 12px; text-transform: uppercase; letter-spacing: 1px; white-space: nowrap; }
+  .wireframe-nav button { background: none; border: 1px solid transparent; color: #bdbdbd; padding: 6px 14px; border-radius: 4px; cursor: pointer; font-size: 13px; white-space: nowrap; transition: all .15s; }
+  .wireframe-nav button:hover { color: #fff; background: rgba(255,255,255,.08); }
+  .wireframe-nav button.active { background: #424242; color: #fff; border-color: #616161; }
+
+  .page-section { display: none; padding-top: 44px; }
+  .page-section.active { display: block; }
+
+  /* ========== UTILITIES ========== */
+  .container { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
+  .section { padding: 64px 0; }
+  .section-alt { background: var(--gray-100); }
+  .section-dark { background: var(--gray-800); color: #fff; }
+  .section-dark h2, .section-dark h3 { color: #fff; }
+  .section-title { font-size: 28px; margin-bottom: 8px; }
+  .section-subtitle { color: var(--gray-500); margin-bottom: 40px; font-size: 16px; }
+  .text-center { text-align: center; }
+  .flex { display: flex; }
+  .flex-center { display: flex; align-items: center; }
+  .gap-8 { gap: 8px; } .gap-16 { gap: 16px; } .gap-24 { gap: 24px; } .gap-32 { gap: 32px; }
+  .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+  .mt-16 { margin-top: 16px; } .mt-24 { margin-top: 24px; } .mt-32 { margin-top: 32px; } .mt-48 { margin-top: 48px; }
+  .mb-16 { margin-bottom: 16px; } .mb-24 { margin-bottom: 24px; } .mb-32 { margin-bottom: 32px; }
+
+  /* ========== COMPONENTS ========== */
+  .btn { display: inline-block; padding: 12px 28px; border-radius: var(--radius); font-size: 15px; font-weight: 600; cursor: pointer; border: 2px solid transparent; transition: all .15s; text-align: center; }
+  .btn-primary { background: var(--gray-800); color: #fff; border-color: var(--gray-800); }
+  .btn-primary:hover { background: var(--gray-700); text-decoration: none; }
+  .btn-secondary { background: transparent; color: var(--gray-800); border-color: var(--gray-800); }
+  .btn-secondary:hover { background: var(--gray-800); color: #fff; text-decoration: none; }
+  .btn-outline-light { background: transparent; color: #fff; border-color: #fff; }
+  .btn-outline-light:hover { background: #fff; color: var(--gray-800); text-decoration: none; }
+  .btn-sm { padding: 8px 18px; font-size: 13px; }
+  .btn-lg { padding: 16px 36px; font-size: 17px; }
+  .btn-block { display: block; width: 100%; }
+
+  .card { background: #fff; border: 1px solid var(--gray-300); border-radius: var(--radius); overflow: hidden; transition: border-color .15s, box-shadow .15s; }
+  .card:hover { border-color: var(--gray-500); box-shadow: 0 4px 12px rgba(0,0,0,.08); }
+  .card-body { padding: 20px; }
+
+  .placeholder-img { background: var(--gray-200); border: 2px dashed var(--gray-300); display: flex; align-items: center; justify-content: center; color: var(--gray-400); font-size: 14px; font-style: italic; min-height: 180px; }
+
+  .badge { display: inline-block; padding: 4px 10px; border-radius: 2px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .5px; }
+  .badge-dark { background: var(--gray-800); color: #fff; }
+  .badge-light { background: var(--gray-200); color: var(--gray-700); }
+  .badge-outline { background: transparent; border: 1px solid var(--gray-400); color: var(--gray-600); }
+
+  .stars { color: var(--gray-500); font-size: 14px; letter-spacing: 2px; }
+  .stars-lg { font-size: 20px; }
+
+  .avatar { width: 48px; height: 48px; border-radius: 50%; background: var(--gray-300); border: 2px dashed var(--gray-400); display: flex; align-items: center; justify-content: center; color: var(--gray-500); font-size: 11px; flex-shrink: 0; }
+  .avatar-lg { width: 80px; height: 80px; font-size: 14px; }
+  .avatar-xl { width: 120px; height: 120px; font-size: 16px; }
+
+  .form-group { margin-bottom: 20px; }
+  .form-group label { display: block; font-weight: 600; font-size: 14px; margin-bottom: 6px; color: var(--gray-700); }
+  .form-group .hint { font-size: 12px; color: var(--gray-400); }
+  .input { width: 100%; padding: 10px 14px; border: 1px solid var(--gray-300); border-radius: var(--radius); font-size: 15px; background: #fff; color: var(--gray-700); }
+  .input:focus { outline: none; border-color: var(--gray-500); }
+  select.input { appearance: auto; }
+
+  .breadcrumb { font-size: 13px; color: var(--gray-400); margin-bottom: 16px; }
+  .breadcrumb a { color: var(--gray-500); }
+  .breadcrumb span { margin: 0 6px; }
+
+  .divider { border: none; border-top: 1px solid var(--gray-200); margin: 24px 0; }
+
+  /* ========== SITE HEADER ========== */
+  .site-header { background: #fff; border-bottom: 1px solid var(--gray-200); padding: 0 24px; height: 72px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 44px; z-index: 100; }
+  .site-header .logo { font-family: Georgia, serif; font-size: 22px; font-weight: 700; color: var(--gray-800); letter-spacing: -0.5px; }
+  .site-header nav { display: flex; gap: 32px; }
+  .site-header nav a { font-size: 15px; color: var(--gray-600); font-weight: 500; }
+  .site-header nav a:hover { color: var(--gray-800); text-decoration: none; }
+  .site-header .header-actions { display: flex; align-items: center; gap: 16px; }
+
+  /* ========== FOOTER ========== */
+  .site-footer { background: var(--gray-900); color: var(--gray-400); padding: 64px 0 32px; }
+  .site-footer h4 { color: #fff; font-size: 16px; margin-bottom: 16px; }
+  .site-footer a { color: var(--gray-400); font-size: 14px; display: block; margin-bottom: 8px; }
+  .site-footer a:hover { color: #fff; }
+  .footer-bottom { border-top: 1px solid var(--gray-700); margin-top: 48px; padding-top: 24px; text-align: center; font-size: 13px; }
+
+  /* ========== COURSE CARD ========== */
+  .course-card .placeholder-img { min-height: 160px; }
+  .course-card .card-body { padding: 16px; }
+  .course-card .card-category { font-size: 11px; text-transform: uppercase; letter-spacing: .5px; color: var(--gray-500); margin-bottom: 8px; }
+  .course-card .card-title { font-family: Georgia, serif; font-size: 17px; color: var(--gray-800); margin-bottom: 8px; line-height: 1.3; }
+  .course-card .card-instructor { font-size: 13px; color: var(--gray-500); margin-bottom: 8px; }
+  .course-card .card-meta { display: flex; align-items: center; justify-content: space-between; font-size: 13px; }
+  .course-card .card-price { font-weight: 700; color: var(--gray-800); font-size: 18px; }
+  .course-card .card-price-old { text-decoration: line-through; color: var(--gray-400); font-size: 14px; font-weight: 400; margin-left: 6px; }
+
+  /* ========== PAGE-SPECIFIC ========== */
+
+  /* Catalog sidebar */
+  .catalog-layout { display: grid; grid-template-columns: 280px 1fr; gap: 32px; align-items: start; }
+  .filter-sidebar { background: #fff; border: 1px solid var(--gray-300); border-radius: var(--radius); padding: 24px; position: sticky; top: 140px; }
+  .filter-group { margin-bottom: 24px; padding-bottom: 24px; border-bottom: 1px solid var(--gray-200); }
+  .filter-group:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+  .filter-group h4 { font-size: 14px; margin-bottom: 12px; }
+  .filter-group label { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--gray-600); margin-bottom: 8px; cursor: pointer; }
+  .filter-group input[type="checkbox"] { accent-color: var(--gray-700); }
+
+  .pagination { display: flex; align-items: center; justify-content: center; gap: 4px; margin-top: 40px; }
+  .pagination button { width: 40px; height: 40px; border: 1px solid var(--gray-300); background: #fff; border-radius: var(--radius); cursor: pointer; font-size: 14px; color: var(--gray-600); }
+  .pagination button.active { background: var(--gray-800); color: #fff; border-color: var(--gray-800); }
+  .pagination button:hover:not(.active) { border-color: var(--gray-500); }
+
+  /* Course detail */
+  .course-detail-layout { display: grid; grid-template-columns: 1fr 380px; gap: 40px; align-items: start; }
+  .pricing-sidebar { background: #fff; border: 1px solid var(--gray-300); border-radius: var(--radius); padding: 28px; position: sticky; top: 140px; }
+  .pricing-sidebar .price-main { font-size: 36px; font-weight: 700; color: var(--gray-800); font-family: Georgia, serif; }
+  .pricing-sidebar .price-old { font-size: 18px; text-decoration: line-through; color: var(--gray-400); margin-left: 8px; }
+  .pricing-sidebar .discount-badge { background: var(--gray-800); color: #fff; padding: 3px 10px; border-radius: 2px; font-size: 12px; font-weight: 700; margin-left: 8px; }
+  .pricing-sidebar .includes-list { list-style: none; margin-top: 20px; }
+  .pricing-sidebar .includes-list li { padding: 8px 0; border-bottom: 1px solid var(--gray-100); font-size: 14px; color: var(--gray-600); }
+  .pricing-sidebar .includes-list li::before { content: "✓ "; color: var(--gray-500); }
+
+  .curriculum-module { border: 1px solid var(--gray-300); border-radius: var(--radius); margin-bottom: 8px; overflow: hidden; }
+  .curriculum-header { padding: 16px 20px; background: var(--gray-50); cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; font-size: 15px; }
+  .curriculum-header:hover { background: var(--gray-100); }
+  .curriculum-body { padding: 0 20px; max-height: 0; overflow: hidden; transition: max-height .3s, padding .3s; }
+  .curriculum-body.open { max-height: 500px; padding: 16px 20px; }
+  .curriculum-lesson { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--gray-100); font-size: 14px; color: var(--gray-600); }
+  .curriculum-lesson:last-child { border-bottom: none; }
+
+  .review-bar { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; font-size: 13px; }
+  .review-bar .bar-track { flex: 1; height: 8px; background: var(--gray-200); border-radius: 4px; }
+  .review-bar .bar-fill { height: 100%; background: var(--gray-500); border-radius: 4px; }
+
+  /* Instructor profile */
+  .instructor-layout { display: grid; grid-template-columns: 1fr 320px; gap: 40px; align-items: start; }
+  .expertise-badge { display: inline-block; padding: 6px 14px; background: var(--gray-100); border: 1px solid var(--gray-300); border-radius: 20px; font-size: 13px; margin: 4px 4px 4px 0; }
+
+  /* Checkout */
+  .checkout-layout { display: grid; grid-template-columns: 1fr 400px; gap: 40px; align-items: start; }
+  .order-summary { background: #fff; border: 1px solid var(--gray-300); border-radius: var(--radius); padding: 28px; position: sticky; top: 140px; }
+  .progress-steps { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 24px 0; font-size: 14px; }
+  .progress-steps .step { color: var(--gray-400); }
+  .progress-steps .step.active { color: var(--gray-800); font-weight: 700; }
+  .progress-steps .step-divider { color: var(--gray-300); }
+  .payment-methods { display: flex; gap: 12px; margin-bottom: 20px; }
+  .payment-method { flex: 1; padding: 14px; border: 1px solid var(--gray-300); border-radius: var(--radius); text-align: center; cursor: pointer; font-size: 14px; }
+  .payment-method.selected { border-color: var(--gray-800); background: var(--gray-50); font-weight: 600; }
+  .trust-badges { display: flex; justify-content: center; gap: 32px; margin-top: 32px; }
+  .trust-badge { text-align: center; color: var(--gray-500); font-size: 13px; }
+  .trust-icon { width: 48px; height: 48px; border-radius: 50%; background: var(--gray-200); margin: 0 auto 8px; display: flex; align-items: center; justify-content: center; font-size: 20px; }
+
+  /* Dashboard */
+  .dashboard-layout { display: grid; grid-template-columns: 260px 1fr; min-height: calc(100vh - 44px); }
+  .dashboard-sidebar { background: var(--gray-800); color: #fff; padding: 32px 0; }
+  .dashboard-sidebar .dash-profile { text-align: center; padding: 0 24px 24px; border-bottom: 1px solid var(--gray-700); margin-bottom: 16px; }
+  .dashboard-sidebar .dash-profile .avatar { margin: 0 auto 12px; background: var(--gray-600); border-color: var(--gray-500); color: var(--gray-300); }
+  .dashboard-sidebar .dash-profile p { font-size: 14px; color: var(--gray-400); }
+  .dashboard-sidebar nav a { display: flex; align-items: center; gap: 12px; padding: 12px 24px; color: var(--gray-400); font-size: 14px; transition: all .15s; }
+  .dashboard-sidebar nav a:hover { background: rgba(255,255,255,.06); color: #fff; text-decoration: none; }
+  .dashboard-sidebar nav a.active { background: rgba(255,255,255,.1); color: #fff; border-left: 3px solid #fff; }
+  .dashboard-main { padding: 32px; background: var(--gray-100); }
+  .stat-card { background: #fff; border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 24px; }
+  .stat-card .stat-value { font-size: 28px; font-weight: 700; color: var(--gray-800); font-family: Georgia, serif; }
+  .stat-card .stat-label { font-size: 13px; color: var(--gray-500); margin-top: 4px; }
+  .stat-card .stat-change { font-size: 12px; color: var(--gray-500); margin-top: 8px; }
+  .chart-placeholder { background: #fff; border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 24px; margin-top: 24px; }
+  .chart-box { background: var(--gray-100); border: 2px dashed var(--gray-300); height: 240px; border-radius: var(--radius); display: flex; align-items: center; justify-content: center; color: var(--gray-400); font-style: italic; font-size: 16px; }
+  .time-filters { display: flex; gap: 4px; margin-bottom: 16px; }
+  .time-filters button { padding: 6px 14px; border: 1px solid var(--gray-300); background: #fff; border-radius: var(--radius); cursor: pointer; font-size: 12px; }
+  .time-filters button.active { background: var(--gray-800); color: #fff; border-color: var(--gray-800); }
+
+  .data-table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid var(--gray-200); border-radius: var(--radius); overflow: hidden; }
+  .data-table th { text-align: left; padding: 14px 16px; background: var(--gray-50); font-size: 12px; text-transform: uppercase; letter-spacing: .5px; color: var(--gray-500); border-bottom: 1px solid var(--gray-200); }
+  .data-table td { padding: 14px 16px; font-size: 14px; border-bottom: 1px solid var(--gray-100); }
+  .data-table tr:hover td { background: var(--gray-50); }
+  .status-badge { padding: 3px 10px; border-radius: 12px; font-size: 11px; font-weight: 600; }
+  .status-published { background: #e8e8e8; color: #333; }
+  .status-draft { background: #f5f5f5; color: #999; }
+  .status-review { background: #eee; color: #666; }
+
+  /* Auth */
+  .auth-wrapper { min-height: calc(100vh - 44px); display: flex; align-items: center; justify-content: center; background: var(--gray-100); padding: 48px 24px; }
+  .auth-card { background: #fff; border: 1px solid var(--gray-300); border-radius: var(--radius); padding: 40px; width: 100%; max-width: 460px; }
+  .auth-tabs { display: flex; border-bottom: 2px solid var(--gray-200); margin-bottom: 32px; }
+  .auth-tabs button { flex: 1; padding: 12px; border: none; background: none; font-size: 15px; font-weight: 600; color: var(--gray-400); cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -2px; transition: all .15s; }
+  .auth-tabs button.active { color: var(--gray-800); border-bottom-color: var(--gray-800); }
+  .auth-form { display: none; }
+  .auth-form.active { display: block; }
+  .role-toggle { display: flex; border: 1px solid var(--gray-300); border-radius: var(--radius); overflow: hidden; margin-bottom: 24px; }
+  .role-toggle button { flex: 1; padding: 10px; border: none; background: #fff; font-size: 14px; cursor: pointer; font-weight: 500; color: var(--gray-500); transition: all .15s; }
+  .role-toggle button.active { background: var(--gray-800); color: #fff; }
+  .social-buttons { display: flex; gap: 12px; margin-top: 16px; }
+  .social-btn { flex: 1; padding: 10px; border: 1px solid var(--gray-300); border-radius: var(--radius); text-align: center; font-size: 14px; cursor: pointer; background: #fff; }
+  .social-btn:hover { border-color: var(--gray-500); }
+  .password-strength { display: flex; gap: 4px; margin-top: 8px; }
+  .password-strength .segment { flex: 1; height: 4px; background: var(--gray-200); border-radius: 2px; }
+  .password-strength .segment.filled { background: var(--gray-500); }
+  .auth-divider { text-align: center; margin: 24px 0; position: relative; }
+  .auth-divider::before { content: ""; position: absolute; top: 50%; left: 0; right: 0; border-top: 1px solid var(--gray-200); }
+  .auth-divider span { background: #fff; padding: 0 16px; position: relative; font-size: 13px; color: var(--gray-400); }
+  .inline-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+</style>
+</head>
+<body>
+
+<!-- ========== WIREFRAME TAB NAVIGATION ========== -->
+<div class="wireframe-nav">
+  <span>Wireframes</span>
+  <button class="active" onclick="showPage('homepage')">Homepage</button>
+  <button onclick="showPage('catalog')">Course Catalog</button>
+  <button onclick="showPage('detail')">Course Detail</button>
+  <button onclick="showPage('instructor')">Instructor Profile</button>
+  <button onclick="showPage('checkout')">Checkout</button>
+  <button onclick="showPage('dashboard')">Dashboard</button>
+  <button onclick="showPage('auth')">Sign In / Sign Up</button>
+</div>
+
+<!-- ================================================================ -->
+<!-- PAGE 1: HOMEPAGE                                                 -->
+<!-- ================================================================ -->
+<section id="page-homepage" class="page-section active">
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="logo">LeadershipPro</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Courses</a>
+      <a href="#">For Instructors</a>
+      <a href="#">About</a>
+    </nav>
+    <div class="header-actions">
+      <a href="#">Sign In</a>
+      <a href="#" class="btn btn-primary btn-sm">Get Started</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <div class="section section-alt" style="padding: 80px 0;">
+    <div class="container" style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 48px; align-items: center;">
+      <div>
+        <h1 style="font-size: 44px; line-height: 1.15; margin-bottom: 20px;">Develop Tomorrow's<br>Leaders Today</h1>
+        <p style="font-size: 18px; color: var(--gray-500); margin-bottom: 32px; max-width: 500px;">Access world-class leadership training from certified instructors. Build the skills your organization needs to thrive.</p>
+        <div style="display: flex; gap: 0; margin-bottom: 32px;">
+          <input class="input" type="text" placeholder="Search courses, topics, or instructors..." style="border-radius: var(--radius) 0 0 var(--radius); flex: 1; font-size: 16px; padding: 14px 18px;">
+          <button class="btn btn-primary" style="border-radius: 0 var(--radius) var(--radius) 0;">Search</button>
+        </div>
+        <div style="display: flex; gap: 48px;">
+          <div><strong style="font-size: 24px; color: var(--gray-800);">500+</strong><br><span style="font-size: 13px; color: var(--gray-500);">Courses</span></div>
+          <div><strong style="font-size: 24px; color: var(--gray-800);">200+</strong><br><span style="font-size: 13px; color: var(--gray-500);">Instructors</span></div>
+          <div><strong style="font-size: 24px; color: var(--gray-800);">50,000+</strong><br><span style="font-size: 13px; color: var(--gray-500);">Learners</span></div>
+        </div>
+      </div>
+      <div class="placeholder-img" style="min-height: 340px; border-radius: var(--radius);">[ Hero Image — Leader Presenting ]</div>
+    </div>
+  </div>
+
+  <!-- Featured Courses -->
+  <div class="section">
+    <div class="container text-center">
+      <h2 class="section-title">Featured Leadership Programs</h2>
+      <p class="section-subtitle">Handpicked courses from our top-rated instructors</p>
+      <div class="grid-4">
+        <div class="card course-card">
+          <div class="placeholder-img">[ Course Image ]</div>
+          <div class="card-body">
+            <div class="card-category">Executive Leadership</div>
+            <div class="card-title">Strategic Leadership Masterclass</div>
+            <div class="card-instructor">Dr. Sarah Mitchell</div>
+            <div class="card-meta">
+              <span class="stars">★★★★★ <span style="color: var(--gray-400);">(342)</span></span>
+              <span class="card-price">$299 <span class="card-price-old">$499</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="card course-card">
+          <div class="placeholder-img">[ Course Image ]</div>
+          <div class="card-body">
+            <div class="card-category">Communication</div>
+            <div class="card-title">Executive Communication & Influence</div>
+            <div class="card-instructor">James A. Rodriguez</div>
+            <div class="card-meta">
+              <span class="stars">★★★★☆ <span style="color: var(--gray-400);">(218)</span></span>
+              <span class="card-price">$249</span>
+            </div>
+          </div>
+        </div>
+        <div class="card course-card">
+          <div class="placeholder-img">[ Course Image ]</div>
+          <div class="card-body">
+            <div class="card-category">Team Building</div>
+            <div class="card-title">High-Performance Team Leadership</div>
+            <div class="card-instructor">Prof. Linda Zhao</div>
+            <div class="card-meta">
+              <span class="stars">★★★★★ <span style="color: var(--gray-400);">(189)</span></span>
+              <span class="card-price">$199 <span class="card-price-old">$349</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="card course-card">
+          <div class="placeholder-img">[ Course Image ]</div>
+          <div class="card-body">
+            <div class="card-category">Change Management</div>
+            <div class="card-title">Leading Organizational Change</div>
+            <div class="card-instructor">Michael K. Thompson</div>
+            <div class="card-meta">
+              <span class="stars">★★★★★ <span style="color: var(--gray-400);">(276)</span></span>
+              <span class="card-price">$349</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-32"><a href="#" class="btn btn-secondary">View All Courses →</a></div>
+    </div>
+  </div>
+
+  <!-- Categories -->
+  <div class="section section-alt">
+    <div class="container text-center">
+      <h2 class="section-title">Explore by Category</h2>
+      <p class="section-subtitle">Find the leadership skills that matter most to you</p>
+      <div class="grid-3">
+        <div class="card" style="text-align: center; padding: 32px 24px; cursor: pointer;">
+          <div class="avatar-lg" style="margin: 0 auto 16px; font-size: 24px;">🎯</div>
+          <h4 style="font-size: 17px; margin-bottom: 4px;">Executive Leadership</h4>
+          <span style="font-size: 13px; color: var(--gray-500);">86 courses</span>
+        </div>
+        <div class="card" style="text-align: center; padding: 32px 24px; cursor: pointer;">
+          <div class="avatar-lg" style="margin: 0 auto 16px; font-size: 24px;">💬</div>
+          <h4 style="font-size: 17px; margin-bottom: 4px;">Communication</h4>
+          <span style="font-size: 13px; color: var(--gray-500);">72 courses</span>
+        </div>
+        <div class="card" style="text-align: center; padding: 32px 24px; cursor: pointer;">
+          <div class="avatar-lg" style="margin: 0 auto 16px; font-size: 24px;">♟️</div>
+          <h4 style="font-size: 17px; margin-bottom: 4px;">Strategic Thinking</h4>
+          <span style="font-size: 13px; color: var(--gray-500);">54 courses</span>
+        </div>
+        <div class="card" style="text-align: center; padding: 32px 24px; cursor: pointer;">
+          <div class="avatar-lg" style="margin: 0 auto 16px; font-size: 24px;">👥</div>
+          <h4 style="font-size: 17px; margin-bottom: 4px;">Team Building</h4>
+          <span style="font-size: 13px; color: var(--gray-500);">63 courses</span>
+        </div>
+        <div class="card" style="text-align: center; padding: 32px 24px; cursor: pointer;">
+          <div class="avatar-lg" style="margin: 0 auto 16px; font-size: 24px;">🔄</div>
+          <h4 style="font-size: 17px; margin-bottom: 4px;">Change Management</h4>
+          <span style="font-size: 13px; color: var(--gray-500);">41 courses</span>
+        </div>
+        <div class="card" style="text-align: center; padding: 32px 24px; cursor: pointer;">
+          <div class="avatar-lg" style="margin: 0 auto 16px; font-size: 24px;">🏆</div>
+          <h4 style="font-size: 17px; margin-bottom: 4px;">Coaching & Mentoring</h4>
+          <span style="font-size: 13px; color: var(--gray-500);">48 courses</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- How It Works -->
+  <div class="section">
+    <div class="container text-center">
+      <h2 class="section-title">How It Works</h2>
+      <p class="section-subtitle">Start your leadership journey in three simple steps</p>
+      <div class="grid-3" style="max-width: 900px; margin: 0 auto;">
+        <div style="padding: 24px;">
+          <div style="width: 56px; height: 56px; border-radius: 50%; background: var(--gray-800); color: #fff; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 22px; font-family: Georgia, serif;">1</div>
+          <h4 style="margin-bottom: 8px;">Browse & Select</h4>
+          <p style="font-size: 14px; color: var(--gray-500);">Explore our curated catalog of leadership courses from certified professionals.</p>
+        </div>
+        <div style="padding: 24px;">
+          <div style="width: 56px; height: 56px; border-radius: 50%; background: var(--gray-800); color: #fff; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 22px; font-family: Georgia, serif;">2</div>
+          <h4 style="margin-bottom: 8px;">Learn at Your Pace</h4>
+          <p style="font-size: 14px; color: var(--gray-500);">Access video lectures, exercises, and resources on your own schedule.</p>
+        </div>
+        <div style="padding: 24px;">
+          <div style="width: 56px; height: 56px; border-radius: 50%; background: var(--gray-800); color: #fff; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 22px; font-family: Georgia, serif;">3</div>
+          <h4 style="margin-bottom: 8px;">Earn Your Certificate</h4>
+          <p style="font-size: 14px; color: var(--gray-500);">Complete the program and receive an industry-recognized certificate.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonials -->
+  <div class="section section-alt">
+    <div class="container text-center">
+      <h2 class="section-title">What Our Learners Say</h2>
+      <p class="section-subtitle">Trusted by professionals at leading organizations</p>
+      <div class="grid-3">
+        <div class="card" style="padding: 28px; text-align: left;">
+          <div class="stars mb-16">★★★★★</div>
+          <p style="font-size: 15px; color: var(--gray-600); margin-bottom: 20px; font-style: italic;">"This platform transformed how I approach leadership. The Strategic Leadership Masterclass gave me practical tools I use daily."</p>
+          <div class="flex-center gap-12" style="gap: 12px;">
+            <div class="avatar">AV</div>
+            <div><strong style="font-size: 14px;">Amanda Whitfield</strong><br><span style="font-size: 12px; color: var(--gray-500);">VP Operations, Mercer Corp</span></div>
+          </div>
+        </div>
+        <div class="card" style="padding: 28px; text-align: left;">
+          <div class="stars mb-16">★★★★★</div>
+          <p style="font-size: 15px; color: var(--gray-600); margin-bottom: 20px; font-style: italic;">"The quality of instructors here is unmatched. I've taken three courses and each one has had a measurable impact on my team's performance."</p>
+          <div class="flex-center gap-12" style="gap: 12px;">
+            <div class="avatar">AV</div>
+            <div><strong style="font-size: 14px;">Robert Chen</strong><br><span style="font-size: 12px; color: var(--gray-500);">Director of HR, TechVista</span></div>
+          </div>
+        </div>
+        <div class="card" style="padding: 28px; text-align: left;">
+          <div class="stars mb-16">★★★★☆</div>
+          <p style="font-size: 15px; color: var(--gray-600); margin-bottom: 20px; font-style: italic;">"As an HR director, I've enrolled our entire management team. The ROI on these courses has been exceptional. Highly recommend."</p>
+          <div class="flex-center gap-12" style="gap: 12px;">
+            <div class="avatar">AV</div>
+            <div><strong style="font-size: 14px;">Patricia Okafor</strong><br><span style="font-size: 12px; color: var(--gray-500);">CEO, BridgePoint Advisory</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA Banner -->
+  <div class="section section-dark" style="padding: 56px 0;">
+    <div class="container text-center">
+      <h2 style="font-size: 32px; margin-bottom: 12px;">Ready to Elevate Your Leadership?</h2>
+      <p style="color: var(--gray-300); margin-bottom: 32px; font-size: 17px;">Join 50,000+ professionals who are investing in their growth.</p>
+      <div style="display: flex; gap: 16px; justify-content: center;">
+        <a href="#" class="btn btn-outline-light btn-lg">Browse Courses</a>
+        <a href="#" class="btn btn-lg" style="background: #fff; color: var(--gray-800); border-color: #fff;">Start Teaching →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="grid-4">
+        <div>
+          <h4>LeadershipPro</h4>
+          <p style="font-size: 14px; margin-bottom: 16px;">The premier marketplace for leadership training and professional development.</p>
+        </div>
+        <div>
+          <h4>Courses</h4>
+          <a href="#">Executive Leadership</a>
+          <a href="#">Communication</a>
+          <a href="#">Strategic Thinking</a>
+          <a href="#">Team Building</a>
+          <a href="#">Change Management</a>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <a href="#">Help Center</a>
+          <a href="#">Contact Us</a>
+          <a href="#">FAQs</a>
+          <a href="#">Become an Instructor</a>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 LeadershipPro. All rights reserved.</div>
+    </div>
+  </footer>
+</section>
+
+<!-- ================================================================ -->
+<!-- PAGE 2: COURSE CATALOG                                           -->
+<!-- ================================================================ -->
+<section id="page-catalog" class="page-section">
+  <header class="site-header">
+    <div class="logo">LeadershipPro</div>
+    <nav><a href="#">Home</a><a href="#">Courses</a><a href="#">For Instructors</a><a href="#">About</a></nav>
+    <div class="header-actions"><a href="#">Sign In</a><a href="#" class="btn btn-primary btn-sm">Get Started</a></div>
+  </header>
+
+  <div class="section" style="padding-top: 32px;">
+    <div class="container">
+      <div class="breadcrumb"><a href="#">Home</a> <span>›</span> Course Catalog</div>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px;">
+        <div>
+          <h1 style="font-size: 32px;">Course Catalog</h1>
+          <p style="color: var(--gray-500); font-size: 14px; margin-top: 4px;">Showing 127 results</p>
+        </div>
+        <div style="display: flex; gap: 12px; align-items: center;">
+          <input class="input" type="text" placeholder="Search courses..." style="width: 280px;">
+          <select class="input" style="width: 180px;">
+            <option>Sort: Most Popular</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+            <option>Highest Rated</option>
+            <option>Newest</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="catalog-layout">
+        <!-- Filters Sidebar -->
+        <aside class="filter-sidebar">
+          <div class="filter-group">
+            <h4>Category</h4>
+            <label><input type="checkbox"> Executive Leadership (86)</label>
+            <label><input type="checkbox"> Communication (72)</label>
+            <label><input type="checkbox"> Strategic Thinking (54)</label>
+            <label><input type="checkbox"> Team Building (63)</label>
+            <label><input type="checkbox"> Change Management (41)</label>
+            <label><input type="checkbox"> Coaching & Mentoring (48)</label>
+          </div>
+          <div class="filter-group">
+            <h4>Level</h4>
+            <label><input type="checkbox"> Beginner (34)</label>
+            <label><input type="checkbox"> Intermediate (52)</label>
+            <label><input type="checkbox"> Advanced (31)</label>
+            <label><input type="checkbox"> Executive (10)</label>
+          </div>
+          <div class="filter-group">
+            <h4>Price Range</h4>
+            <div style="display: flex; gap: 8px; align-items: center;">
+              <input class="input" type="text" placeholder="Min" style="width: 50%;">
+              <span>—</span>
+              <input class="input" type="text" placeholder="Max" style="width: 50%;">
+            </div>
+            <button class="btn btn-sm btn-secondary mt-16" style="width: 100%;">Apply</button>
+          </div>
+          <div class="filter-group">
+            <h4>Rating</h4>
+            <label><input type="checkbox"> ★★★★★ & up (45)</label>
+            <label><input type="checkbox"> ★★★★☆ & up (89)</label>
+            <label><input type="checkbox"> ★★★☆☆ & up (112)</label>
+          </div>
+          <div class="filter-group">
+            <h4>Duration</h4>
+            <label><input type="checkbox"> 0–2 hours (18)</label>
+            <label><input type="checkbox"> 2–6 hours (42)</label>
+            <label><input type="checkbox"> 6–16 hours (38)</label>
+            <label><input type="checkbox"> 16+ hours (29)</label>
+          </div>
+          <div class="filter-group">
+            <h4>Format</h4>
+            <label><input type="checkbox"> Self-paced (89)</label>
+            <label><input type="checkbox"> Live Sessions (24)</label>
+            <label><input type="checkbox"> Hybrid (14)</label>
+          </div>
+          <a href="#" style="font-size: 13px; color: var(--gray-500);">Clear All Filters</a>
+        </aside>
+
+        <!-- Course Grid -->
+        <div>
+          <div class="grid-3">
+            <div class="card course-card"><div class="placeholder-img" style="min-height: 140px;">[ Image ]</div><div class="card-body"><div class="card-category">Executive Leadership</div><div class="card-title">Strategic Leadership Masterclass</div><div class="card-instructor">Dr. Sarah Mitchell</div><div class="card-meta"><span class="stars">★★★★★ (342)</span><span class="card-price">$299</span></div><button class="btn btn-primary btn-sm btn-block mt-16">Enroll Now</button></div></div>
+            <div class="card course-card"><div class="placeholder-img" style="min-height: 140px;">[ Image ]</div><div class="card-body"><div class="card-category">Communication</div><div class="card-title">Executive Communication Skills</div><div class="card-instructor">James A. Rodriguez</div><div class="card-meta"><span class="stars">★★★★☆ (218)</span><span class="card-price">$249</span></div><button class="btn btn-primary btn-sm btn-block mt-16">Enroll Now</button></div></div>
+            <div class="card course-card"><div class="placeholder-img" style="min-height: 140px;">[ Image ]</div><div class="card-body"><div class="card-category">Team Building</div><div class="card-title">High-Performance Teams</div><div class="card-instructor">Prof. Linda Zhao</div><div class="card-meta"><span class="stars">★★★★★ (189)</span><span class="card-price">$199</span></div><button class="btn btn-primary btn-sm btn-block mt-16">Enroll Now</button></div></div>
+            <div class="card course-card"><div class="placeholder-img" style="min-height: 140px;">[ Image ]</div><div class="card-body"><div class="card-category">Change Management</div><div class="card-title">Leading Organizational Change</div><div class="card-instructor">Michael K. Thompson</div><div class="card-meta"><span class="stars">★★★★★ (276)</span><span class="card-price">$349</span></div><button class="btn btn-primary btn-sm btn-block mt-16">Enroll Now</button></div></div>
+            <div class="card course-card"><div class="placeholder-img" style="min-height: 140px;">[ Image ]</div><div class="card-body"><div class="card-category">Coaching</div><div class="card-title">Coaching for Senior Leaders</div><div class="card-instructor">Dr. Emma Sullivan</div><div class="card-meta"><span class="stars">★★★★☆ (154)</span><span class="card-price">$279</span></div><button class="btn btn-primary btn-sm btn-block mt-16">Enroll Now</button></div></div>
+            <div class="card course-card"><div class="placeholder-img" style="min-height: 140px;">[ Image ]</div><div class="card-body"><div class="card-category">Strategic Thinking</div><div class="card-title">Strategic Decision Making</div><div class="card-instructor">Dr. Alan Park</div><div class="card-meta"><span class="stars">★★★★★ (201)</span><span class="card-price">$319</span></div><button class="btn btn-primary btn-sm btn-block mt-16">Enroll Now</button></div></div>
+            <div class="card course-card"><div class="placeholder-img" style="min-height: 140px;">[ Image ]</div><div class="card-body"><div class="card-category">Executive Leadership</div><div class="card-title">Women in Leadership</div><div class="card-instructor">Catherine Ng</div><div class="card-meta"><span class="stars">★★★★★ (312)</span><span class="card-price">$259</span></div><button class="btn btn-primary btn-sm btn-block mt-16">Enroll Now</button></div></div>
+            <div class="card course-card"><div class="placeholder-img" style="min-height: 140px;">[ Image ]</div><div class="card-body"><div class="card-category">Communication</div><div class="card-title">Conflict Resolution Mastery</div><div class="card-instructor">Dr. Marcus Reeves</div><div class="card-meta"><span class="stars">★★★★☆ (167)</span><span class="card-price">$189</span></div><button class="btn btn-primary btn-sm btn-block mt-16">Enroll Now</button></div></div>
+            <div class="card course-card"><div class="placeholder-img" style="min-height: 140px;">[ Image ]</div><div class="card-body"><div class="card-category">Team Building</div><div class="card-title">Remote Team Leadership</div><div class="card-instructor">Sophia Andersen</div><div class="card-meta"><span class="stars">★★★★★ (231)</span><span class="card-price">$229</span></div><button class="btn btn-primary btn-sm btn-block mt-16">Enroll Now</button></div></div>
+          </div>
+          <div class="pagination">
+            <button>‹</button>
+            <button class="active">1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+            <button>›</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================ -->
+<!-- PAGE 3: COURSE DETAIL                                            -->
+<!-- ================================================================ -->
+<section id="page-detail" class="page-section">
+  <header class="site-header">
+    <div class="logo">LeadershipPro</div>
+    <nav><a href="#">Home</a><a href="#">Courses</a><a href="#">For Instructors</a><a href="#">About</a></nav>
+    <div class="header-actions"><a href="#">Sign In</a><a href="#" class="btn btn-primary btn-sm">Get Started</a></div>
+  </header>
+
+  <!-- Course Header -->
+  <div class="section-alt" style="padding: 40px 0;">
+    <div class="container">
+      <div class="breadcrumb"><a href="#">Home</a> <span>›</span> <a href="#">Courses</a> <span>›</span> <a href="#">Executive Leadership</a> <span>›</span> Strategic Leadership Masterclass</div>
+      <span class="badge badge-dark" style="margin-bottom: 16px;">Bestseller</span>
+      <h1 style="font-size: 36px; max-width: 700px; margin-bottom: 16px;">Strategic Leadership Masterclass</h1>
+      <p style="font-size: 17px; color: var(--gray-600); max-width: 650px; margin-bottom: 20px;">Master the art of strategic leadership with proven frameworks used by Fortune 500 executives. Transform your leadership approach and drive organizational success.</p>
+      <div class="flex-center" style="gap: 16px; margin-bottom: 16px;">
+        <div class="avatar" style="width: 40px; height: 40px;">AV</div>
+        <span style="font-size: 15px;">Created by <strong>Dr. Sarah Mitchell</strong></span>
+      </div>
+      <div class="flex-center" style="gap: 24px; font-size: 14px; color: var(--gray-500);">
+        <span class="stars">★★★★★ <strong>4.9</strong> (342 reviews)</span>
+        <span>5,623 students enrolled</span>
+        <span>Last updated: March 2026</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" style="padding-top: 40px;">
+    <div class="container">
+      <div class="course-detail-layout">
+        <!-- Main Content -->
+        <div>
+          <!-- What You'll Learn -->
+          <div style="border: 1px solid var(--gray-300); border-radius: var(--radius); padding: 28px; margin-bottom: 32px;">
+            <h3 style="margin-bottom: 20px;">What You'll Learn</h3>
+            <div class="grid-2" style="gap: 12px;">
+              <div style="font-size: 14px; color: var(--gray-600);">✓ Develop a strategic leadership mindset for complex challenges</div>
+              <div style="font-size: 14px; color: var(--gray-600);">✓ Build and lead high-performing executive teams</div>
+              <div style="font-size: 14px; color: var(--gray-600);">✓ Master stakeholder management and influence</div>
+              <div style="font-size: 14px; color: var(--gray-600);">✓ Create and communicate a compelling organizational vision</div>
+              <div style="font-size: 14px; color: var(--gray-600);">✓ Navigate organizational politics and change effectively</div>
+              <div style="font-size: 14px; color: var(--gray-600);">✓ Apply data-driven decision-making frameworks</div>
+            </div>
+          </div>
+
+          <!-- Description -->
+          <div class="mb-32">
+            <h3 style="margin-bottom: 16px;">Course Description</h3>
+            <p style="color: var(--gray-600); margin-bottom: 12px;">This comprehensive masterclass is designed for mid-to-senior level professionals who want to elevate their strategic leadership capabilities. Drawing from 20 years of executive coaching experience, Dr. Sarah Mitchell delivers a curriculum that combines theoretical frameworks with practical, real-world applications.</p>
+            <p style="color: var(--gray-600); margin-bottom: 12px;">Through case studies from leading organizations, interactive exercises, and peer discussions, you'll develop the skills necessary to lead with confidence and drive meaningful organizational transformation.</p>
+            <a href="#" style="font-size: 14px; font-weight: 600;">Show More ▾</a>
+          </div>
+
+          <!-- Curriculum -->
+          <div class="mb-32">
+            <h3 style="margin-bottom: 16px;">Course Curriculum</h3>
+            <p style="font-size: 14px; color: var(--gray-500); margin-bottom: 16px;">5 modules • 32 lessons • 18h 30m total length</p>
+            <div class="curriculum-module">
+              <div class="curriculum-header" onclick="this.nextElementSibling.classList.toggle('open')">
+                <span>Module 1: Foundations of Strategic Leadership</span>
+                <span style="font-size: 13px; color: var(--gray-500);">6 lessons • 3h 20m ▾</span>
+              </div>
+              <div class="curriculum-body open">
+                <div class="curriculum-lesson"><span>📹 Introduction to Strategic Leadership</span><span>12:30</span></div>
+                <div class="curriculum-lesson"><span>📹 The Leadership Mindset Shift</span><span>22:15</span></div>
+                <div class="curriculum-lesson"><span>📄 Reading: Strategic Thinking Frameworks</span><span>15 min</span></div>
+                <div class="curriculum-lesson"><span>📹 Defining Your Leadership Philosophy</span><span>28:40</span></div>
+                <div class="curriculum-lesson"><span>📝 Exercise: Personal Leadership Assessment</span><span>30 min</span></div>
+                <div class="curriculum-lesson"><span>📹 Module Recap & Key Takeaways</span><span>8:10</span></div>
+              </div>
+            </div>
+            <div class="curriculum-module">
+              <div class="curriculum-header" onclick="this.nextElementSibling.classList.toggle('open')"><span>Module 2: Vision & Strategy Development</span><span style="font-size: 13px; color: var(--gray-500);">7 lessons • 4h 10m ▸</span></div>
+              <div class="curriculum-body"></div>
+            </div>
+            <div class="curriculum-module">
+              <div class="curriculum-header" onclick="this.nextElementSibling.classList.toggle('open')"><span>Module 3: Stakeholder Management & Influence</span><span style="font-size: 13px; color: var(--gray-500);">6 lessons • 3h 45m ▸</span></div>
+              <div class="curriculum-body"></div>
+            </div>
+            <div class="curriculum-module">
+              <div class="curriculum-header" onclick="this.nextElementSibling.classList.toggle('open')"><span>Module 4: Leading High-Performance Teams</span><span style="font-size: 13px; color: var(--gray-500);">7 lessons • 4h 05m ▸</span></div>
+              <div class="curriculum-body"></div>
+            </div>
+            <div class="curriculum-module">
+              <div class="curriculum-header" onclick="this.nextElementSibling.classList.toggle('open')"><span>Module 5: Driving Organizational Change</span><span style="font-size: 13px; color: var(--gray-500);">6 lessons • 3h 10m ▸</span></div>
+              <div class="curriculum-body"></div>
+            </div>
+          </div>
+
+          <!-- Instructor -->
+          <div class="mb-32" style="border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 28px;">
+            <h3 style="margin-bottom: 20px;">Your Instructor</h3>
+            <div class="flex" style="gap: 20px;">
+              <div class="avatar-lg">AV</div>
+              <div>
+                <h4 style="font-size: 18px;">Dr. Sarah Mitchell</h4>
+                <p style="font-size: 14px; color: var(--gray-500); margin-bottom: 8px;">Executive Leadership Coach & Former Fortune 500 VP</p>
+                <div class="flex-center" style="gap: 24px; font-size: 13px; color: var(--gray-500); margin-bottom: 12px;">
+                  <span>★ 4.9 Instructor Rating</span>
+                  <span>15 Courses</span>
+                  <span>25,432 Students</span>
+                </div>
+                <p style="font-size: 14px; color: var(--gray-600);">Dr. Mitchell brings 20+ years of executive leadership experience to the classroom. Previously VP of Strategy at a Fortune 500 company, she now dedicates her career to developing the next generation of leaders.</p>
+                <a href="#" class="btn btn-secondary btn-sm mt-16">View Full Profile →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reviews -->
+          <div class="mb-32">
+            <h3 style="margin-bottom: 20px;">Student Reviews</h3>
+            <div class="flex" style="gap: 40px; margin-bottom: 32px;">
+              <div style="text-align: center; min-width: 120px;">
+                <div style="font-size: 56px; font-family: Georgia, serif; font-weight: 700; color: var(--gray-800);">4.9</div>
+                <div class="stars stars-lg">★★★★★</div>
+                <div style="font-size: 13px; color: var(--gray-500); margin-top: 4px;">342 reviews</div>
+              </div>
+              <div style="flex: 1;">
+                <div class="review-bar"><span style="min-width: 30px;">5 ★</span><div class="bar-track"><div class="bar-fill" style="width: 82%;"></div></div><span>82%</span></div>
+                <div class="review-bar"><span style="min-width: 30px;">4 ★</span><div class="bar-track"><div class="bar-fill" style="width: 12%;"></div></div><span>12%</span></div>
+                <div class="review-bar"><span style="min-width: 30px;">3 ★</span><div class="bar-track"><div class="bar-fill" style="width: 4%;"></div></div><span>4%</span></div>
+                <div class="review-bar"><span style="min-width: 30px;">2 ★</span><div class="bar-track"><div class="bar-fill" style="width: 1%;"></div></div><span>1%</span></div>
+                <div class="review-bar"><span style="min-width: 30px;">1 ★</span><div class="bar-track"><div class="bar-fill" style="width: 1%;"></div></div><span>1%</span></div>
+              </div>
+            </div>
+            <hr class="divider">
+            <!-- Individual Reviews -->
+            <div style="margin-bottom: 24px;">
+              <div class="flex-center" style="gap: 12px; margin-bottom: 8px;"><div class="avatar" style="width: 36px; height: 36px; font-size: 10px;">AV</div><strong style="font-size: 14px;">Amanda Whitfield</strong><span style="font-size: 12px; color: var(--gray-400); margin-left: 8px;">2 weeks ago</span></div>
+              <div class="stars" style="margin-bottom: 8px;">★★★★★</div>
+              <p style="font-size: 14px; color: var(--gray-600);">Absolutely transformative. The frameworks taught here are immediately applicable. I've already started implementing the stakeholder mapping exercise with my team and seeing results.</p>
+              <button style="background: none; border: 1px solid var(--gray-300); padding: 4px 12px; border-radius: var(--radius); font-size: 12px; color: var(--gray-500); cursor: pointer; margin-top: 8px;">👍 Helpful (12)</button>
+            </div>
+            <hr class="divider">
+            <div style="margin-bottom: 24px;">
+              <div class="flex-center" style="gap: 12px; margin-bottom: 8px;"><div class="avatar" style="width: 36px; height: 36px; font-size: 10px;">AV</div><strong style="font-size: 14px;">Robert Chen</strong><span style="font-size: 12px; color: var(--gray-400); margin-left: 8px;">1 month ago</span></div>
+              <div class="stars" style="margin-bottom: 8px;">★★★★★</div>
+              <p style="font-size: 14px; color: var(--gray-600);">Dr. Mitchell's experience really shines through. The case studies are incredibly relevant and the peer discussions added so much value. Worth every penny.</p>
+              <button style="background: none; border: 1px solid var(--gray-300); padding: 4px 12px; border-radius: var(--radius); font-size: 12px; color: var(--gray-500); cursor: pointer; margin-top: 8px;">👍 Helpful (8)</button>
+            </div>
+            <hr class="divider">
+            <div style="margin-bottom: 24px;">
+              <div class="flex-center" style="gap: 12px; margin-bottom: 8px;"><div class="avatar" style="width: 36px; height: 36px; font-size: 10px;">AV</div><strong style="font-size: 14px;">Patricia Okafor</strong><span style="font-size: 12px; color: var(--gray-400); margin-left: 8px;">2 months ago</span></div>
+              <div class="stars" style="margin-bottom: 8px;">★★★★☆</div>
+              <p style="font-size: 14px; color: var(--gray-600);">Very comprehensive course. The content is excellent but I wish there were more live Q&A sessions. The materials and exercises are top-notch though.</p>
+              <button style="background: none; border: 1px solid var(--gray-300); padding: 4px 12px; border-radius: var(--radius); font-size: 12px; color: var(--gray-500); cursor: pointer; margin-top: 8px;">👍 Helpful (5)</button>
+            </div>
+            <div class="text-center mt-24"><a href="#" class="btn btn-secondary btn-sm">Load More Reviews</a></div>
+          </div>
+
+          <!-- Related Courses -->
+          <div>
+            <h3 style="margin-bottom: 20px;">Related Courses</h3>
+            <div class="grid-3">
+              <div class="card course-card"><div class="placeholder-img" style="min-height: 120px;">[ Image ]</div><div class="card-body"><div class="card-title" style="font-size: 15px;">Executive Communication Skills</div><div class="card-meta"><span class="stars" style="font-size: 12px;">★★★★☆ (218)</span><span class="card-price" style="font-size: 16px;">$249</span></div></div></div>
+              <div class="card course-card"><div class="placeholder-img" style="min-height: 120px;">[ Image ]</div><div class="card-body"><div class="card-title" style="font-size: 15px;">Leading Organizational Change</div><div class="card-meta"><span class="stars" style="font-size: 12px;">★★★★★ (276)</span><span class="card-price" style="font-size: 16px;">$349</span></div></div></div>
+              <div class="card course-card"><div class="placeholder-img" style="min-height: 120px;">[ Image ]</div><div class="card-body"><div class="card-title" style="font-size: 15px;">High-Performance Teams</div><div class="card-meta"><span class="stars" style="font-size: 12px;">★★★★★ (189)</span><span class="card-price" style="font-size: 16px;">$199</span></div></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pricing Sidebar -->
+        <div class="pricing-sidebar">
+          <div style="margin-bottom: 20px;">
+            <span class="price-main">$299</span>
+            <span class="price-old">$499</span>
+            <span class="discount-badge">40% OFF</span>
+          </div>
+          <p style="font-size: 13px; color: var(--gray-500); margin-bottom: 20px;">⏰ Sale ends in 2 days</p>
+          <a href="#" class="btn btn-primary btn-block btn-lg" style="margin-bottom: 12px;">Enroll Now</a>
+          <a href="#" class="btn btn-secondary btn-block">Add to Wishlist</a>
+          <p style="font-size: 12px; color: var(--gray-500); text-align: center; margin-top: 12px;">30-Day Money-Back Guarantee</p>
+          <hr class="divider">
+          <h4 style="font-size: 15px; margin-bottom: 12px;">This course includes:</h4>
+          <ul class="includes-list">
+            <li>18.5 hours of on-demand video</li>
+            <li>12 downloadable resources</li>
+            <li>32 exercises & case studies</li>
+            <li>Full lifetime access</li>
+            <li>Access on mobile and desktop</li>
+            <li>Certificate of completion</li>
+          </ul>
+          <hr class="divider">
+          <div style="text-align: center; font-size: 13px; color: var(--gray-500);">
+            Share: <a href="#" style="margin: 0 4px;">🔗</a> <a href="#" style="margin: 0 4px;">✉️</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================ -->
+<!-- PAGE 4: INSTRUCTOR PROFILE                                       -->
+<!-- ================================================================ -->
+<section id="page-instructor" class="page-section">
+  <header class="site-header">
+    <div class="logo">LeadershipPro</div>
+    <nav><a href="#">Home</a><a href="#">Courses</a><a href="#">For Instructors</a><a href="#">About</a></nav>
+    <div class="header-actions"><a href="#">Sign In</a><a href="#" class="btn btn-primary btn-sm">Get Started</a></div>
+  </header>
+
+  <div class="section-alt" style="padding: 48px 0;">
+    <div class="container">
+      <div class="breadcrumb"><a href="#">Home</a> <span>›</span> <a href="#">Instructors</a> <span>›</span> Dr. Sarah Mitchell</div>
+      <div class="flex" style="gap: 32px; align-items: center;">
+        <div class="avatar-xl">Photo</div>
+        <div>
+          <h1 style="font-size: 32px; margin-bottom: 4px;">Dr. Sarah Mitchell</h1>
+          <p style="font-size: 17px; color: var(--gray-500); margin-bottom: 16px;">Executive Leadership Coach & Former Fortune 500 VP</p>
+          <div class="flex-center" style="gap: 32px; font-size: 14px; color: var(--gray-600);">
+            <span><strong>15</strong> Courses</span>
+            <span><strong>4.9</strong> ★ Rating</span>
+            <span><strong>25,432</strong> Students</span>
+            <span><strong>8</strong> Years Teaching</span>
+          </div>
+          <a href="#" class="btn btn-secondary btn-sm" style="margin-top: 16px;">Contact Instructor</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" style="padding-top: 40px;">
+    <div class="container">
+      <div class="instructor-layout">
+        <div>
+          <!-- About -->
+          <div class="mb-32">
+            <h3 style="margin-bottom: 16px;">About</h3>
+            <p style="color: var(--gray-600); margin-bottom: 12px;">Dr. Sarah Mitchell is a renowned executive leadership coach with over 20 years of experience in corporate leadership and organizational development. Previously serving as Vice President of Strategy at a Fortune 500 technology company, she brings a unique blend of academic rigor and real-world experience to her teaching.</p>
+            <p style="color: var(--gray-600); margin-bottom: 20px;">She holds a Ph.D. in Organizational Leadership from Harvard University and an MBA from Wharton. Her research on strategic leadership decision-making has been published in the Harvard Business Review, MIT Sloan Management Review, and the Academy of Management Journal.</p>
+
+            <h4 style="font-size: 16px; margin-bottom: 12px;">Credentials</h4>
+            <ul style="list-style: none; color: var(--gray-600); font-size: 14px;">
+              <li style="padding: 6px 0;">• Ph.D. Organizational Leadership — Harvard University</li>
+              <li style="padding: 6px 0;">• MBA — Wharton School of Business</li>
+              <li style="padding: 6px 0;">• Certified Executive Coach (ICF-PCC)</li>
+              <li style="padding: 6px 0;">• Former VP Strategy, Meridian Technologies (Fortune 500)</li>
+              <li style="padding: 6px 0;">• Published Author: "The Strategic Leader's Playbook"</li>
+            </ul>
+          </div>
+
+          <!-- Expertise -->
+          <div class="mb-32">
+            <h4 style="font-size: 16px; margin-bottom: 12px;">Areas of Expertise</h4>
+            <div>
+              <span class="expertise-badge">Executive Leadership</span>
+              <span class="expertise-badge">Strategic Planning</span>
+              <span class="expertise-badge">Organizational Change</span>
+              <span class="expertise-badge">Team Development</span>
+              <span class="expertise-badge">Stakeholder Management</span>
+              <span class="expertise-badge">Decision Making</span>
+              <span class="expertise-badge">Executive Coaching</span>
+              <span class="expertise-badge">Communication</span>
+            </div>
+          </div>
+
+          <!-- Courses -->
+          <div class="mb-32">
+            <h3 style="margin-bottom: 20px;">Courses by Dr. Mitchell</h3>
+            <div class="grid-3">
+              <div class="card course-card"><div class="placeholder-img" style="min-height: 130px;">[ Image ]</div><div class="card-body"><div class="card-title" style="font-size: 15px;">Strategic Leadership Masterclass</div><div class="card-meta"><span class="stars" style="font-size: 12px;">★★★★★ (342)</span><span class="card-price" style="font-size: 16px;">$299</span></div></div></div>
+              <div class="card course-card"><div class="placeholder-img" style="min-height: 130px;">[ Image ]</div><div class="card-body"><div class="card-title" style="font-size: 15px;">Leading with Emotional Intelligence</div><div class="card-meta"><span class="stars" style="font-size: 12px;">★★★★★ (198)</span><span class="card-price" style="font-size: 16px;">$249</span></div></div></div>
+              <div class="card course-card"><div class="placeholder-img" style="min-height: 130px;">[ Image ]</div><div class="card-body"><div class="card-title" style="font-size: 15px;">C-Suite Communication</div><div class="card-meta"><span class="stars" style="font-size: 12px;">★★★★☆ (156)</span><span class="card-price" style="font-size: 16px;">$199</span></div></div></div>
+              <div class="card course-card"><div class="placeholder-img" style="min-height: 130px;">[ Image ]</div><div class="card-body"><div class="card-title" style="font-size: 15px;">Change Management Fundamentals</div><div class="card-meta"><span class="stars" style="font-size: 12px;">★★★★★ (223)</span><span class="card-price" style="font-size: 16px;">$179</span></div></div></div>
+              <div class="card course-card"><div class="placeholder-img" style="min-height: 130px;">[ Image ]</div><div class="card-body"><div class="card-title" style="font-size: 15px;">Executive Decision Making</div><div class="card-meta"><span class="stars" style="font-size: 12px;">★★★★★ (187)</span><span class="card-price" style="font-size: 16px;">$269</span></div></div></div>
+              <div class="card course-card"><div class="placeholder-img" style="min-height: 130px;">[ Image ]</div><div class="card-body"><div class="card-title" style="font-size: 15px;">Board-Level Leadership</div><div class="card-meta"><span class="stars" style="font-size: 12px;">★★★★☆ (89)</span><span class="card-price" style="font-size: 16px;">$349</span></div></div></div>
+            </div>
+          </div>
+
+          <!-- Reviews -->
+          <div>
+            <h3 style="margin-bottom: 20px;">Student Reviews</h3>
+            <div style="margin-bottom: 20px; padding: 20px; border: 1px solid var(--gray-200); border-radius: var(--radius);">
+              <div class="flex-center" style="gap: 12px; margin-bottom: 8px;"><div class="avatar" style="width: 36px; height: 36px; font-size: 10px;">AV</div><strong style="font-size: 14px;">David Park</strong><span class="stars" style="margin-left: 8px;">★★★★★</span></div>
+              <p style="font-size: 14px; color: var(--gray-600);">Dr. Mitchell is hands down the best leadership instructor I've encountered. Her real-world experience makes every concept relatable and actionable.</p>
+            </div>
+            <div style="margin-bottom: 20px; padding: 20px; border: 1px solid var(--gray-200); border-radius: var(--radius);">
+              <div class="flex-center" style="gap: 12px; margin-bottom: 8px;"><div class="avatar" style="width: 36px; height: 36px; font-size: 10px;">AV</div><strong style="font-size: 14px;">Lisa Martinez</strong><span class="stars" style="margin-left: 8px;">★★★★★</span></div>
+              <p style="font-size: 14px; color: var(--gray-600);">I've taken 4 of her courses and each one builds on the last beautifully. Her teaching style is engaging, structured, and incredibly professional.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div>
+          <div style="background: #fff; border: 1px solid var(--gray-300); border-radius: var(--radius); padding: 24px; margin-bottom: 24px;">
+            <h4 style="font-size: 15px; margin-bottom: 16px;">Quick Stats</h4>
+            <div style="font-size: 14px; color: var(--gray-600);">
+              <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--gray-100);"><span>Total Students</span><strong>25,432</strong></div>
+              <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--gray-100);"><span>Total Reviews</span><strong>1,195</strong></div>
+              <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--gray-100);"><span>Avg. Rating</span><strong>4.9 ★</strong></div>
+              <div style="display: flex; justify-content: space-between; padding: 10px 0;"><span>Response Time</span><strong>&lt; 24 hours</strong></div>
+            </div>
+          </div>
+          <div style="background: #fff; border: 1px solid var(--gray-300); border-radius: var(--radius); padding: 24px;">
+            <h4 style="font-size: 15px; margin-bottom: 16px;">Achievements</h4>
+            <div style="margin-bottom: 12px;"><span class="badge badge-dark">🏆 Top Rated Instructor</span></div>
+            <div style="margin-bottom: 12px;"><span class="badge badge-light">⭐ Featured Expert 2026</span></div>
+            <div style="margin-bottom: 12px;"><span class="badge badge-light">📚 Published Author</span></div>
+            <div><span class="badge badge-light">🎓 25,000+ Students</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================ -->
+<!-- PAGE 5: CHECKOUT                                                 -->
+<!-- ================================================================ -->
+<section id="page-checkout" class="page-section">
+  <header class="site-header">
+    <div class="logo">LeadershipPro</div>
+    <nav><a href="#">Home</a><a href="#">Courses</a><a href="#">For Instructors</a><a href="#">About</a></nav>
+    <div class="header-actions"><a href="#">Sign In</a><a href="#" class="btn btn-primary btn-sm">Get Started</a></div>
+  </header>
+
+  <!-- Progress Steps -->
+  <div class="progress-steps">
+    <span class="step">Cart</span><span class="step-divider">→</span>
+    <span class="step">Information</span><span class="step-divider">→</span>
+    <span class="step active">Payment</span><span class="step-divider">→</span>
+    <span class="step">Confirmation</span>
+  </div>
+
+  <div class="section" style="padding-top: 16px;">
+    <div class="container">
+      <h1 style="font-size: 28px; margin-bottom: 32px;">Complete Your Purchase</h1>
+      <div class="checkout-layout">
+        <!-- Form -->
+        <div>
+          <!-- Account -->
+          <div style="background: #fff; border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 28px; margin-bottom: 24px;">
+            <h3 style="font-size: 18px; margin-bottom: 20px;">Account Information</h3>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input class="input" type="email" placeholder="you@company.com">
+              <span class="hint" style="margin-top: 4px; display: block;">Already have an account? <a href="#" style="font-weight: 600;">Sign In</a></span>
+            </div>
+          </div>
+
+          <!-- Billing -->
+          <div style="background: #fff; border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 28px; margin-bottom: 24px;">
+            <h3 style="font-size: 18px; margin-bottom: 20px;">Billing Information</h3>
+            <div class="inline-fields">
+              <div class="form-group"><label>First Name</label><input class="input" type="text" placeholder="John"></div>
+              <div class="form-group"><label>Last Name</label><input class="input" type="text" placeholder="Smith"></div>
+            </div>
+            <div class="form-group"><label>Company <span style="color: var(--gray-400);">(optional)</span></label><input class="input" type="text" placeholder="Acme Corporation"></div>
+            <div class="form-group"><label>Country</label><select class="input"><option>United States</option><option>Canada</option><option>United Kingdom</option></select></div>
+            <div class="form-group"><label>Address</label><input class="input" type="text" placeholder="123 Business Ave"></div>
+            <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 16px;">
+              <div class="form-group"><label>City</label><input class="input" type="text" placeholder="New York"></div>
+              <div class="form-group"><label>State</label><select class="input"><option>NY</option></select></div>
+              <div class="form-group"><label>ZIP</label><input class="input" type="text" placeholder="10001"></div>
+            </div>
+          </div>
+
+          <!-- Payment -->
+          <div style="background: #fff; border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 28px; margin-bottom: 24px;">
+            <h3 style="font-size: 18px; margin-bottom: 20px;">Payment Method</h3>
+            <div class="payment-methods">
+              <div class="payment-method selected">💳 Credit Card</div>
+              <div class="payment-method">PayPal</div>
+              <div class="payment-method">🏦 Bank Transfer</div>
+            </div>
+            <div class="form-group"><label>Card Number</label><input class="input" type="text" placeholder="1234 5678 9012 3456"></div>
+            <div class="inline-fields">
+              <div class="form-group"><label>Expiry Date</label><input class="input" type="text" placeholder="MM / YY"></div>
+              <div class="form-group"><label>CVV</label><input class="input" type="text" placeholder="123"></div>
+            </div>
+            <label style="display: flex; align-items: center; gap: 8px; font-size: 14px; cursor: pointer;"><input type="checkbox"> Save card for future purchases</label>
+          </div>
+
+          <!-- Order Notes -->
+          <div style="background: #fff; border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 28px; margin-bottom: 24px;">
+            <div class="form-group" style="margin-bottom: 0;">
+              <label>Order Notes <span style="color: var(--gray-400);">(optional)</span></label>
+              <textarea class="input" rows="3" placeholder="Any special requests or notes..."></textarea>
+            </div>
+          </div>
+
+          <!-- Terms & Submit -->
+          <div style="margin-bottom: 24px;">
+            <label style="display: flex; align-items: flex-start; gap: 8px; font-size: 14px; cursor: pointer; margin-bottom: 20px;"><input type="checkbox" style="margin-top: 3px;"> I agree to the <a href="#" style="font-weight: 600;">Terms of Service</a> and <a href="#" style="font-weight: 600;">Privacy Policy</a></label>
+            <button class="btn btn-primary btn-block btn-lg">Complete Purchase — $269.00</button>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="trust-badges">
+            <div class="trust-badge"><div class="trust-icon">🔒</div>SSL Encrypted</div>
+            <div class="trust-badge"><div class="trust-icon">↩️</div>30-Day Money Back</div>
+            <div class="trust-badge"><div class="trust-icon">🛡️</div>Secure Payment</div>
+          </div>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="order-summary">
+          <h3 style="font-size: 18px; margin-bottom: 20px;">Order Summary</h3>
+          <div class="flex" style="gap: 16px; padding-bottom: 20px; border-bottom: 1px solid var(--gray-200); margin-bottom: 20px;">
+            <div class="placeholder-img" style="width: 80px; min-height: 60px; font-size: 10px; flex-shrink: 0;">[ Img ]</div>
+            <div>
+              <div style="font-family: Georgia, serif; font-size: 15px; font-weight: 700; margin-bottom: 4px;">Strategic Leadership Masterclass</div>
+              <div style="font-size: 13px; color: var(--gray-500);">By Dr. Sarah Mitchell</div>
+            </div>
+          </div>
+          <div style="font-size: 14px;">
+            <div style="display: flex; justify-content: space-between; padding: 8px 0;"><span>Subtotal</span><span>$499.00</span></div>
+            <div style="display: flex; justify-content: space-between; padding: 8px 0; color: var(--gray-500);"><span>Discount (40%)</span><span>-$200.00</span></div>
+            <div style="display: flex; justify-content: space-between; padding: 8px 0; color: var(--gray-500);"><span>Coupon (LEAD30)</span><span>-$30.00</span></div>
+            <hr class="divider">
+            <div style="display: flex; justify-content: space-between; padding: 8px 0; font-size: 18px; font-weight: 700; color: var(--gray-800);"><span>Total</span><span>$269.00</span></div>
+          </div>
+          <hr class="divider">
+          <div style="display: flex; gap: 8px; margin-bottom: 12px;">
+            <input class="input" type="text" placeholder="Coupon code" style="font-size: 13px;">
+            <button class="btn btn-secondary btn-sm">Apply</button>
+          </div>
+          <p style="font-size: 12px; color: var(--gray-400); text-align: center; margin-top: 16px;">🔒 Your payment information is encrypted and secure.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================ -->
+<!-- PAGE 6: INSTRUCTOR DASHBOARD                                     -->
+<!-- ================================================================ -->
+<section id="page-dashboard" class="page-section">
+  <div class="dashboard-layout">
+    <!-- Sidebar -->
+    <aside class="dashboard-sidebar">
+      <div class="dash-profile">
+        <div class="avatar-lg" style="margin: 0 auto 12px; background: var(--gray-600); border-color: var(--gray-500); color: var(--gray-300);">AV</div>
+        <strong style="font-size: 16px;">Dr. Sarah Mitchell</strong>
+        <p>Instructor</p>
+      </div>
+      <nav>
+        <a href="#" class="active">📊 Dashboard</a>
+        <a href="#">📚 My Courses</a>
+        <a href="#">➕ Create New Course</a>
+        <a href="#">📈 Analytics</a>
+        <a href="#">⭐ Reviews</a>
+        <a href="#">💰 Earnings</a>
+        <a href="#">✉️ Messages</a>
+        <a href="#">⚙️ Settings</a>
+      </nav>
+      <div style="padding: 24px; margin-top: auto; border-top: 1px solid var(--gray-700); position: absolute; bottom: 0; left: 0; right: 0;">
+        <a href="#" style="font-size: 13px; color: var(--gray-400);">← Back to Marketplace</a>
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <main class="dashboard-main">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px;">
+        <div>
+          <h1 style="font-size: 26px; margin-bottom: 4px;">Welcome back, Sarah</h1>
+          <p style="color: var(--gray-500); font-size: 14px;">Here's what's happening with your courses today.</p>
+        </div>
+        <span style="font-size: 14px; color: var(--gray-500);">April 4, 2026</span>
+      </div>
+
+      <!-- Stats Cards -->
+      <div class="grid-4" style="margin-bottom: 24px;">
+        <div class="stat-card">
+          <div class="stat-label">Total Revenue</div>
+          <div class="stat-value">$45,230</div>
+          <div class="stat-change">↑ 12% from last month</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Active Students</div>
+          <div class="stat-value">5,623</div>
+          <div class="stat-change">↑ 8% from last month</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Average Rating</div>
+          <div class="stat-value">4.9 / 5</div>
+          <div class="stat-change">↑ 0.1 from last month</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Total Courses</div>
+          <div class="stat-value">15</div>
+          <div class="stat-change">2 drafts in progress</div>
+        </div>
+      </div>
+
+      <!-- Revenue Chart -->
+      <div class="chart-placeholder">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+          <h3 style="font-size: 18px;">Revenue Overview</h3>
+          <div class="time-filters">
+            <button>7D</button>
+            <button>1M</button>
+            <button class="active">3M</button>
+            <button>1Y</button>
+            <button>All</button>
+          </div>
+        </div>
+        <div class="chart-box">[ Revenue Line Chart — Placeholder ]</div>
+      </div>
+
+      <!-- Two Column: Activity + Top Courses -->
+      <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 24px; margin-top: 24px;">
+        <div style="background: #fff; border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 24px;">
+          <h3 style="font-size: 18px; margin-bottom: 20px;">Recent Activity</h3>
+          <div style="font-size: 14px;">
+            <div style="display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--gray-100);"><span>New enrollment in <strong>Strategic Leadership Masterclass</strong></span><span style="color: var(--gray-400); font-size: 12px;">2 min ago</span></div>
+            <div style="display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--gray-100);"><span>New review: ★★★★★ on <strong>Leading with EQ</strong></span><span style="color: var(--gray-400); font-size: 12px;">15 min ago</span></div>
+            <div style="display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--gray-100);"><span>Payment received: <strong>$299.00</strong></span><span style="color: var(--gray-400); font-size: 12px;">1 hr ago</span></div>
+            <div style="display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--gray-100);"><span>3 new enrollments in <strong>C-Suite Communication</strong></span><span style="color: var(--gray-400); font-size: 12px;">3 hrs ago</span></div>
+            <div style="display: flex; justify-content: space-between; padding: 12px 0;"><span>Course <strong>Board-Level Leadership</strong> approved</span><span style="color: var(--gray-400); font-size: 12px;">Yesterday</span></div>
+          </div>
+        </div>
+        <div style="background: #fff; border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 24px;">
+          <h3 style="font-size: 18px; margin-bottom: 20px;">Top Performing Courses</h3>
+          <div style="font-size: 14px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid var(--gray-100);"><div><strong>1.</strong> Strategic Leadership Masterclass<br><span style="font-size: 12px; color: var(--gray-400);">5,623 students • $16,870 revenue</span></div><span class="stars">★ 4.9</span></div>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid var(--gray-100);"><div><strong>2.</strong> Leading with Emotional Intelligence<br><span style="font-size: 12px; color: var(--gray-400);">3,298 students • $8,245 revenue</span></div><span class="stars">★ 4.8</span></div>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 0;"><div><strong>3.</strong> Change Management Fundamentals<br><span style="font-size: 12px; color: var(--gray-400);">2,841 students • $5,087 revenue</span></div><span class="stars">★ 4.9</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Course Management Table -->
+      <div style="margin-top: 24px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+          <h3 style="font-size: 18px;">Course Management</h3>
+          <a href="#" class="btn btn-primary btn-sm">+ Create New Course</a>
+        </div>
+        <table class="data-table">
+          <thead>
+            <tr><th>Course Name</th><th>Status</th><th>Students</th><th>Rating</th><th>Revenue</th><th>Actions</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Strategic Leadership Masterclass</strong></td><td><span class="status-badge status-published">Published</span></td><td>5,623</td><td>★ 4.9</td><td>$16,870</td><td><a href="#">Edit</a> · <a href="#">View</a></td></tr>
+            <tr><td><strong>Leading with Emotional Intelligence</strong></td><td><span class="status-badge status-published">Published</span></td><td>3,298</td><td>★ 4.8</td><td>$8,245</td><td><a href="#">Edit</a> · <a href="#">View</a></td></tr>
+            <tr><td><strong>C-Suite Communication</strong></td><td><span class="status-badge status-published">Published</span></td><td>2,156</td><td>★ 4.7</td><td>$4,312</td><td><a href="#">Edit</a> · <a href="#">View</a></td></tr>
+            <tr><td><strong>Advanced Negotiation Tactics</strong></td><td><span class="status-badge status-draft">Draft</span></td><td>—</td><td>—</td><td>—</td><td><a href="#">Edit</a></td></tr>
+            <tr><td><strong>Leadership in Crisis</strong></td><td><span class="status-badge status-review">Under Review</span></td><td>—</td><td>—</td><td>—</td><td><a href="#">Edit</a> · <a href="#">Preview</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+</section>
+
+<!-- ================================================================ -->
+<!-- PAGE 7: AUTH                                                      -->
+<!-- ================================================================ -->
+<section id="page-auth" class="page-section">
+  <div class="auth-wrapper">
+    <div class="auth-card">
+      <div class="text-center mb-24">
+        <div style="font-family: Georgia, serif; font-size: 24px; font-weight: 700; color: var(--gray-800); margin-bottom: 8px;">LeadershipPro</div>
+      </div>
+
+      <div class="auth-tabs">
+        <button class="active" onclick="showAuthTab('signin')">Sign In</button>
+        <button onclick="showAuthTab('signup')">Sign Up</button>
+      </div>
+
+      <!-- Sign In Form -->
+      <div id="auth-signin" class="auth-form active">
+        <h3 style="font-size: 22px; margin-bottom: 8px;">Welcome Back</h3>
+        <p style="font-size: 14px; color: var(--gray-500); margin-bottom: 24px;">Sign in to continue your leadership journey.</p>
+        <div class="form-group"><label>Email Address</label><input class="input" type="email" placeholder="you@company.com"></div>
+        <div class="form-group">
+          <label>Password</label>
+          <input class="input" type="password" placeholder="Enter your password">
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; font-size: 14px;">
+          <label style="display: flex; align-items: center; gap: 6px; cursor: pointer;"><input type="checkbox"> Remember me</label>
+          <a href="#" style="font-weight: 600;">Forgot password?</a>
+        </div>
+        <button class="btn btn-primary btn-block btn-lg">Sign In</button>
+        <div class="auth-divider"><span>or continue with</span></div>
+        <div class="social-buttons">
+          <button class="social-btn">G — Google</button>
+          <button class="social-btn">in — LinkedIn</button>
+        </div>
+        <p style="text-align: center; font-size: 14px; margin-top: 24px; color: var(--gray-500);">Don't have an account? <a href="#" style="font-weight: 600;" onclick="showAuthTab('signup'); return false;">Sign Up</a></p>
+      </div>
+
+      <!-- Sign Up Form -->
+      <div id="auth-signup" class="auth-form">
+        <h3 style="font-size: 22px; margin-bottom: 8px;">Create Your Account</h3>
+        <p style="font-size: 14px; color: var(--gray-500); margin-bottom: 24px;">Join the leading platform for leadership development.</p>
+        <div class="role-toggle">
+          <button class="active" onclick="this.classList.add('active'); this.nextElementSibling.classList.remove('active');">I'm a Learner</button>
+          <button onclick="this.classList.add('active'); this.previousElementSibling.classList.remove('active');">I'm an Instructor</button>
+        </div>
+        <div class="inline-fields">
+          <div class="form-group"><label>First Name</label><input class="input" type="text" placeholder="John"></div>
+          <div class="form-group"><label>Last Name</label><input class="input" type="text" placeholder="Smith"></div>
+        </div>
+        <div class="form-group"><label>Email Address</label><input class="input" type="email" placeholder="you@company.com"></div>
+        <div class="form-group">
+          <label>Password</label>
+          <input class="input" type="password" placeholder="Create a strong password">
+          <div class="password-strength">
+            <div class="segment filled"></div>
+            <div class="segment filled"></div>
+            <div class="segment filled"></div>
+            <div class="segment"></div>
+          </div>
+        </div>
+        <div class="form-group"><label>Confirm Password</label><input class="input" type="password" placeholder="Confirm your password"></div>
+        <div class="form-group"><label>Company <span style="color: var(--gray-400);">(optional)</span></label><input class="input" type="text" placeholder="Your organization"></div>
+        <label style="display: flex; align-items: flex-start; gap: 8px; font-size: 14px; cursor: pointer; margin-bottom: 24px;"><input type="checkbox" style="margin-top: 3px;"> I agree to the <a href="#" style="font-weight: 600; margin: 0 4px;">Terms of Service</a> and <a href="#" style="font-weight: 600; margin: 0 4px;">Privacy Policy</a></label>
+        <button class="btn btn-primary btn-block btn-lg">Create Account</button>
+        <div class="auth-divider"><span>or continue with</span></div>
+        <div class="social-buttons">
+          <button class="social-btn">G — Google</button>
+          <button class="social-btn">in — LinkedIn</button>
+        </div>
+        <p style="text-align: center; font-size: 14px; margin-top: 24px; color: var(--gray-500);">Already have an account? <a href="#" style="font-weight: 600;" onclick="showAuthTab('signin'); return false;">Sign In</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== JAVASCRIPT ========== -->
+<script>
+  function showPage(pageId) {
+    document.querySelectorAll('.page-section').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.wireframe-nav button').forEach(b => b.classList.remove('active'));
+    document.getElementById('page-' + pageId).classList.add('active');
+    event.target.classList.add('active');
+    window.scrollTo(0, 0);
+  }
+
+  function showAuthTab(tab) {
+    document.querySelectorAll('.auth-form').forEach(f => f.classList.remove('active'));
+    document.querySelectorAll('.auth-tabs button').forEach(b => b.classList.remove('active'));
+    document.getElementById('auth-' + tab).classList.add('active');
+    const idx = tab === 'signin' ? 0 : 1;
+    document.querySelectorAll('.auth-tabs button')[idx].classList.add('active');
+  }
+
+  // Payment method toggle
+  document.querySelectorAll('.payment-method').forEach(el => {
+    el.addEventListener('click', function() {
+      document.querySelectorAll('.payment-method').forEach(m => m.classList.remove('selected'));
+      this.classList.add('selected');
+    });
+  });
+</script>
+</body>
+</html>
