@@ -398,6 +398,7 @@ en: {
   address: 'Address', city: 'City', state: 'State', zip: 'ZIP', cart: 'Cart', payment: 'Payment', confirmation: 'Confirmation',
   // Dashboard
   welcome: 'Welcome back,', dash_subtitle: "Here's what's happening with your courses.",
+  dash_empty_title: 'Welcome to your dashboard', dash_empty_msg: "You haven't claimed or added any courses yet. Find existing courses to claim, or publish a new one.", dash_empty_browse: 'Browse courses to claim', dash_empty_add: 'Add a new course',
   total_revenue: 'Total Revenue', active_students: 'Active Students', avg_rating: 'Average Rating', total_courses: 'Total Courses',
   recent_activity: 'Recent Activity', your_courses: 'Your Courses', no_activity: 'No recent activity',
   dashboard: 'Dashboard', my_enrolled: 'My Enrolled', back_market: 'Back to Marketplace',
@@ -472,6 +473,7 @@ sv: {
   ssl: 'SSL-krypterad', money_back: '30 dagars \u00e5terbetalning', secure: 'S\u00e4ker betalning',
   address: 'Adress', city: 'Stad', state: 'L\u00e4n', zip: 'Postnummer', cart: 'Kundvagn', payment: 'Betalning', confirmation: 'Bekr\u00e4ftelse',
   welcome: 'V\u00e4lkommen tillbaka,', dash_subtitle: 'H\u00e4r \u00e4r vad som h\u00e4nder med dina kurser.',
+  dash_empty_title: 'V\u00e4lkommen till din kontrollpanel', dash_empty_msg: 'Du har inte tagit \u00f6ver eller lagt till n\u00e5gra kurser \u00e4n. Hitta befintliga kurser att ta \u00f6ver, eller publicera en ny.', dash_empty_browse: 'Bl\u00e4ddra bland kurser att ta \u00f6ver', dash_empty_add: 'L\u00e4gg till en ny kurs',
   total_revenue: 'Total int\u00e4kt', active_students: 'Aktiva studenter', avg_rating: 'Snittbetyg', total_courses: 'Totalt kurser',
   recent_activity: 'Senaste aktivitet', your_courses: 'Dina kurser', no_activity: 'Ingen senaste aktivitet',
   dashboard: 'Kontrollpanel', my_enrolled: 'Mina inskrivna', back_market: 'Tillbaka till marknadsplatsen',
@@ -537,6 +539,7 @@ de: {
   ssl: 'SSL-verschl\u00fcsselt', money_back: '30 Tage Geld-zur\u00fcck', secure: 'Sichere Zahlung',
   address: 'Adresse', city: 'Stadt', state: 'Bundesland', zip: 'PLZ', cart: 'Warenkorb', payment: 'Zahlung', confirmation: 'Best\u00e4tigung',
   welcome: 'Willkommen zur\u00fcck,', dash_subtitle: 'Hier ist, was mit Ihren Kursen passiert.',
+  dash_empty_title: 'Willkommen in Ihrem Dashboard', dash_empty_msg: 'Sie haben noch keine Kurse \u00fcbernommen oder hinzugef\u00fcgt. Finden Sie bestehende Kurse zum \u00dcbernehmen oder ver\u00f6ffentlichen Sie einen neuen.', dash_empty_browse: 'Kurse durchsuchen und \u00fcbernehmen', dash_empty_add: 'Neuen Kurs hinzuf\u00fcgen',
   total_revenue: 'Gesamtumsatz', active_students: 'Aktive Studenten', avg_rating: 'Durchschnittsbewertung', total_courses: 'Kurse gesamt',
   recent_activity: 'Letzte Aktivit\u00e4t', your_courses: 'Ihre Kurse', no_activity: 'Keine aktuelle Aktivit\u00e4t',
   dashboard: 'Dashboard', my_enrolled: 'Meine Einschreibungen', back_market: 'Zur\u00fcck zum Marktplatz',
@@ -602,6 +605,7 @@ fr: {
   ssl: 'Chiffrement SSL', money_back: 'Remboursement 30 jours', secure: 'Paiement s\u00e9curis\u00e9',
   address: 'Adresse', city: 'Ville', state: 'R\u00e9gion', zip: 'Code postal', cart: 'Panier', payment: 'Paiement', confirmation: 'Confirmation',
   welcome: 'Bienvenue,', dash_subtitle: 'Voici ce qui se passe avec vos cours.',
+  dash_empty_title: 'Bienvenue sur votre tableau de bord', dash_empty_msg: 'Vous n’avez encore réclamé ni ajouté de cours. Trouvez des cours existants à réclamer ou publiez-en un nouveau.', dash_empty_browse: 'Parcourir les cours à réclamer', dash_empty_add: 'Ajouter un nouveau cours',
   total_revenue: 'Revenu total', active_students: '\u00c9tudiants actifs', avg_rating: 'Note moyenne', total_courses: 'Total des cours',
   recent_activity: 'Activit\u00e9 r\u00e9cente', your_courses: 'Vos cours', no_activity: 'Aucune activit\u00e9 r\u00e9cente',
   dashboard: 'Tableau de bord', my_enrolled: 'Mes inscriptions', back_market: 'Retour au march\u00e9',
@@ -2206,6 +2210,11 @@ async function renderDashboard(app) {
   <main class="dashboard-main"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:32px;"><div><h1 style="font-size:26px;margin-bottom:4px;">${t('welcome')} ${esc(u.first_name)}</h1><p style="color:var(--slate-500);font-size:14px;">${t('dash_subtitle')}</p></div></div>
   <div id="dash-stats" class="grid-4" style="margin-bottom:24px;"><div class="page-loader" style="grid-column:1/-1;"><div class="loading-spinner"></div></div></div><div id="dash-activity" style="margin-top:24px;"></div><div id="dash-courses" style="margin-top:24px;"></div></main></div>`;
   try{const d=await api('/instructor/dashboard');const s=d.stats||{};
+  if(!Number(s.total_courses||0)){
+    document.getElementById('dash-stats').style.display='none';
+    document.getElementById('dash-activity').innerHTML=`<div style="background:#fff;border:1px solid var(--slate-200);border-radius:var(--radius-lg);padding:40px 32px;text-align:center;"><div style="font-size:48px;margin-bottom:16px;">\u{1F9ED}</div><h3 style="font-size:20px;margin-bottom:8px;color:var(--navy-800);">${t('dash_empty_title')}</h3><p style="color:var(--slate-500);font-size:15px;max-width:520px;margin:0 auto 28px;">${t('dash_empty_msg')}</p><div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;"><button class="btn btn-primary" onclick="navigate('catalog')">${t('dash_empty_browse')} →</button><button class="btn btn-secondary" onclick="navigate('course-form')">+ ${t('dash_empty_add')}</button></div></div>`;
+    return;
+  }
   document.getElementById('dash-stats').innerHTML=`<div class="stat-card" style="border-top:3px solid var(--teal-500);"><div class="stat-label">${t('total_revenue')}</div><div class="stat-value">$${Number(s.total_revenue||0).toLocaleString()}</div></div><div class="stat-card" style="border-top:3px solid var(--navy-500);"><div class="stat-label">${t('active_students')}</div><div class="stat-value">${s.total_students||0}</div></div><div class="stat-card" style="border-top:3px solid var(--gold-500);"><div class="stat-label">${t('avg_rating')}</div><div class="stat-value">${s.avg_rating?Number(s.avg_rating).toFixed(1):'N/A'}</div></div><div class="stat-card" style="border-top:3px solid var(--slate-500);"><div class="stat-label">${t('total_courses')}</div><div class="stat-value">${s.total_courses||0}</div></div>`;
   document.getElementById('dash-activity').innerHTML=`<div style="background:#fff;border:1px solid var(--slate-200);border-radius:var(--radius-lg);padding:24px;"><h3 style="font-size:18px;margin-bottom:20px;">${t('recent_activity')}</h3><div style="font-size:14px;">${(d.recent_activity||[]).length?(d.recent_activity||[]).map(a=>`<div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--slate-100);"><span>${esc(a.text||a.type)}</span><span style="color:var(--slate-400);font-size:12px;">${esc(a.time||'')}</span></div>`).join(''):`<p style="color:var(--slate-500);">${t('no_activity')}</p>`}</div></div>`;
   const top=d.top_courses||[];document.getElementById('dash-courses').innerHTML=`<h3 style="font-size:18px;margin-bottom:16px;">${t('your_courses')}</h3><table class="data-table"><thead><tr><th>${t('course')}</th><th>Status</th><th>${t('students')}</th><th>${t('total_revenue')}</th></tr></thead><tbody>${top.map(c=>`<tr><td><strong>${esc(c.title)}</strong></td><td><span class="status-badge status-${esc(c.status)}">${esc(c.status)}</span></td><td>${c.students||0}</td><td>$${Number(c.revenue||0).toLocaleString()}</td></tr>`).join('')}</tbody></table>`;
