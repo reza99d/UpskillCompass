@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='30' fill='%230f2440'/><circle cx='32' cy='32' r='28' fill='none' stroke='%23d4a017' stroke-width='2'/><g transform='rotate(45 32 32)'><polygon points='32,10 28,32 32,32' fill='%23f0cc5b'/><polygon points='32,10 36,32 32,32' fill='%23d4a017'/><polygon points='32,54 28,32 32,32' fill='%23bdd4ea'/><polygon points='32,54 36,32 32,32' fill='%2389b3d6'/></g><circle cx='32' cy='32' r='3' fill='%23d4a017' stroke='%230f2440' stroke-width='0.5'/></svg>">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' fill='%23d4a017'/><circle cx='32' cy='32' r='30' fill='%230f2440'/><circle cx='32' cy='32' r='28' fill='none' stroke='%23d4a017' stroke-width='2'/><g transform='rotate(45 32 32)'><polygon points='32,10 28,32 32,32' fill='%23f0cc5b'/><polygon points='32,10 36,32 32,32' fill='%23d4a017'/><polygon points='32,54 28,32 32,32' fill='%23bdd4ea'/><polygon points='32,54 36,32 32,32' fill='%2389b3d6'/></g><circle cx='32' cy='32' r='3' fill='%23d4a017' stroke='%230f2440' stroke-width='0.5'/></svg>">
 <title>UpskillCompass — World's largest leadership training database</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -137,7 +137,8 @@
 
   /* Header */
   .site-header { background: rgba(255,255,255,.95); backdrop-filter: blur(10px); border-bottom: 1px solid var(--slate-200); padding: 0 24px; height: 72px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
-  .site-header .logo { font-family: 'Playfair Display', Georgia, serif; font-size: 24px; font-weight: 800; color: var(--navy-800); letter-spacing: -0.5px; cursor: pointer; }
+  .site-header .logo { font-family: 'Playfair Display', Georgia, serif; font-size: 24px; font-weight: 800; color: var(--navy-800); letter-spacing: -0.5px; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; }
+  .site-header .logo svg { width: 32px; height: 32px; flex-shrink: 0; border-radius: 4px; }
   .site-header .logo em { font-style: normal; color: var(--gold-500); }
   .site-header nav { display: flex; gap: 32px; }
   .site-header nav a { font-size: 15px; color: var(--slate-600); font-weight: 500; transition: color .2s; cursor: pointer; }
@@ -320,7 +321,7 @@
 <body>
 <div id="toast" class="toast"></div>
 <header class="site-header" id="site-header">
-  <div class="logo" onclick="navigate('homepage')">Upskill<em>Compass</em></div>
+  <div class="logo" onclick="navigate('homepage')"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" fill="#d4a017"/><circle cx="32" cy="32" r="30" fill="#0f2440"/><circle cx="32" cy="32" r="28" fill="none" stroke="#d4a017" stroke-width="2"/><g transform="rotate(45 32 32)"><polygon points="32,10 28,32 32,32" fill="#f0cc5b"/><polygon points="32,10 36,32 32,32" fill="#d4a017"/><polygon points="32,54 28,32 32,32" fill="#bdd4ea"/><polygon points="32,54 36,32 32,32" fill="#89b3d6"/></g><circle cx="32" cy="32" r="3" fill="#d4a017" stroke="#0f2440" stroke-width="0.5"/></svg><span>Upskill<em>Compass</em></span></div>
   <nav id="main-nav"></nav>
   <div class="header-actions" id="header-actions"></div>
 </header>
@@ -1057,7 +1058,7 @@ async function api(path, opts = {}) {
         data: {
           first_name: body.first_name || '',
           last_name:  body.last_name  || '',
-          role:       'learner',   // role becomes 'instructor' on first claim
+          role:       'instructor',
           company:    body.company  || ''
         }
       }
@@ -1681,6 +1682,32 @@ function closeAdminModal() {
   const m = document.getElementById('admin-modal');
   if (m) m.remove();
 }
+
+// Blocking "check your email" confirmation after signup.
+// Rendered as a modal (not an inline alert) so the user must acknowledge it.
+// Reuses modal-backdrop / modal-card / alert-success styles — no new CSS.
+function closeSignupConfirmModal() {
+  const m = document.getElementById('signup-confirm-modal');
+  if (m) m.remove();
+}
+window.closeSignupConfirmModal = closeSignupConfirmModal;
+function showSignupConfirmModal(email) {
+  closeSignupConfirmModal();
+  const el = document.createElement('div');
+  el.id = 'signup-confirm-modal';
+  el.className = 'modal-backdrop';
+  el.innerHTML = `
+    <div class="modal-card" onclick="event.stopPropagation()" style="max-width:480px;">
+      <div class="modal-body" style="padding:32px 28px;text-align:center;">
+        <div class="alert alert-success" style="margin-bottom:20px;">${t('check_email').replace('{email}', esc(email))}</div>
+        <button class="btn btn-primary" onclick="closeSignupConfirmModal()">${t('admin_close')}</button>
+      </div>
+    </div>`;
+  // Intentional: no backdrop-click-to-close and no Esc handler — user must
+  // click the button to dismiss so they can't miss the "check your email" step.
+  document.body.appendChild(el);
+}
+window.showSignupConfirmModal = showSignupConfirmModal;
 function renderAdminModalShell(titleHtml, bodyHtml, footHtml, wide) {
   closeAdminModal();
   const el = document.createElement('div');
@@ -2113,7 +2140,8 @@ window.doSignIn=async function(){
       btn.disabled=false;btn.textContent=t('sign_in');return;
     }
     toast(t('welcome')+(state.user&&state.user.first_name?' '+state.user.first_name:'')+'!','success');
-    navigate('homepage');
+    const r=state.user&&state.user.role;
+    navigate(r==='instructor'?'dashboard':r==='admin'?'admin':'homepage');
   }catch(e){
     document.getElementById('auth-alert').innerHTML=`<div class="alert alert-error">${esc(e.message)}</div>`;
     btn.disabled=false;btn.textContent=t('sign_in');
@@ -2134,7 +2162,7 @@ window.doSignUp=async function(){
     })});
     if (r.pending_confirmation) {
       state.pendingEmail = r.email;
-      document.getElementById('auth-alert').innerHTML=`<div class="alert alert-success">${t('check_email').replace('{email}', esc(r.email))}</div>`;
+      showSignupConfirmModal(r.email);
       btn.disabled=false;btn.textContent=t('create_account');return;
     }
     toast(t('welcome')+(state.user&&state.user.first_name?' '+state.user.first_name:'')+'!','success');
@@ -2499,14 +2527,18 @@ async function renderAdmin(app) {
   //    so by the time we get here state.session is set. All we do is clean up
   //    the URL and show a welcome toast.
   const u = new URL(window.location.href);
-  if (u.searchParams.get('confirmed') === '1') {
+  const justConfirmed = u.searchParams.get('confirmed') === '1';
+  if (justConfirmed) {
     u.searchParams.delete('confirmed');
     history.replaceState({}, '', u.pathname + (u.searchParams.toString() ? '?' + u.searchParams.toString() : '') + u.hash);
     try { toast(t('email_confirmed'), 'success'); } catch(_) {}
   }
 
-  // 3. Render the first page.
-  navigate('homepage');
+  // 3. Render the first page. After email confirmation, instructors go to their
+  //    dashboard; everyone else (admins, legacy learners) goes to the homepage,
+  //    since renderDashboard is instructor-gated and would bounce them to signin.
+  const role = state.user && state.user.role;
+  navigate(justConfirmed && role === 'instructor' ? 'dashboard' : 'homepage');
 })();
 </script>
 </body>
