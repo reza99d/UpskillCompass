@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' fill='%23d4a017'/><circle cx='32' cy='32' r='30' fill='%230f2440'/><circle cx='32' cy='32' r='28' fill='none' stroke='%23d4a017' stroke-width='2'/><g transform='rotate(45 32 32)'><polygon points='32,10 28,32 32,32' fill='%23f0cc5b'/><polygon points='32,10 36,32 32,32' fill='%23d4a017'/><polygon points='32,54 28,32 32,32' fill='%23bdd4ea'/><polygon points='32,54 36,32 32,32' fill='%2389b3d6'/></g><circle cx='32' cy='32' r='3' fill='%23d4a017' stroke='%230f2440' stroke-width='0.5'/></svg>">
+<link rel="preconnect" href="https://krcjbrchrgjgceopmxdv.supabase.co" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
 <title>UpskillCompass — World's largest leadership training database</title>
 <meta name="description" content="Discover and compare 100+ leadership and certification training programs from top providers — CCL, IMD, INSEAD, Wharton, Harvard PON, Scrum Alliance, AWS, ISC2, PMI and more. Filter by format, level, language, country and price.">
 <meta name="robots" content="index,follow">
@@ -1840,12 +1844,12 @@ async function renderDetail(app, cidOrSlug) {
       description: c.short_description || (c.description ? String(c.description).slice(0, 200) : DEFAULT_DESC),
       ogType: 'website'
     });
+    const courseUrl = SITE_URL + '/courses/' + (c.slug || cid);
     const courseLd = {
-      '@context': 'https://schema.org',
       '@type': 'Course',
       name: c.title,
       description: c.short_description || c.description || '',
-      url: SITE_URL + '/courses/' + (c.slug || cid),
+      url: courseUrl,
       provider: { '@type': 'Organization', name: 'UpskillCompass', sameAs: SITE_URL + '/' }
     };
     if (c.instructor_name) courseLd.instructor = { '@type': 'Person', name: c.instructor_name };
@@ -1854,14 +1858,31 @@ async function renderDetail(app, cidOrSlug) {
         '@type': 'Offer',
         price: Number(c.price),
         priceCurrency: c.currency || 'USD',
-        url: SITE_URL + '/courses/' + (c.slug || cid),
+        url: courseUrl,
         availability: 'https://schema.org/InStock'
       };
     }
     if (c.duration_hours) courseLd.timeRequired = 'PT' + Math.round(Number(c.duration_hours)) + 'H';
     if (c.level)          courseLd.educationalLevel = c.level;
     if (c.category_name)  courseLd.about = c.category_name;
-    setJsonLd(courseLd);
+    if (c.review_count && c.avg_rating) {
+      courseLd.aggregateRating = {
+        '@type': 'AggregateRating',
+        ratingValue: Number(c.avg_rating),
+        ratingCount: c.review_count,
+        bestRating: 5,
+        worstRating: 1
+      };
+    }
+    const breadcrumbsLd = {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home',    item: SITE_URL + '/' },
+        { '@type': 'ListItem', position: 2, name: 'Courses', item: SITE_URL + '/courses' },
+        { '@type': 'ListItem', position: 3, name: c.title,   item: courseUrl }
+      ]
+    };
+    setJsonLd({ '@context': 'https://schema.org', '@graph': [courseLd, breadcrumbsLd] });
     const avg=c.avg_rating?Number(c.avg_rating).toFixed(1):'0.0';const disc=c.original_price?Math.round((1-c.price/c.original_price)*100):0;
     app.innerHTML=`
     <div style="background:linear-gradient(135deg,var(--navy-50),var(--slate-50));padding:40px 0;"><div class="container">
@@ -2276,15 +2297,24 @@ async function renderInstructor(app, iid) {
       description: i.bio || (i.title ? `${i.title} on UpskillCompass.` : `Instructor profile on UpskillCompass.`),
       ogType: 'profile'
     });
-    setJsonLd({
-      '@context': 'https://schema.org',
+    const instrName = `${i.first_name || ''} ${i.last_name || ''}`.trim();
+    const instrUrl  = SITE_URL + '/instructors/' + iid;
+    const personLd = {
       '@type': 'Person',
-      name: `${i.first_name || ''} ${i.last_name || ''}`.trim(),
+      name: instrName,
       jobTitle: i.title || undefined,
       description: i.bio || undefined,
-      url: SITE_URL + '/instructors/' + iid,
+      url: instrUrl,
       worksFor: { '@type': 'Organization', name: i.company || 'UpskillCompass' }
-    });
+    };
+    const breadcrumbsLd = {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home',     item: SITE_URL + '/' },
+        { '@type': 'ListItem', position: 2, name: instrName,  item: instrUrl }
+      ]
+    };
+    setJsonLd({ '@context': 'https://schema.org', '@graph': [personLd, breadcrumbsLd] });
     app.innerHTML=`
     <div style="background:linear-gradient(135deg,var(--navy-50),var(--slate-50));padding:48px 0;"><div class="container">
       <div class="breadcrumb"><a onclick="navigate('homepage')">${t('home')}</a> <span>&rsaquo;</span> ${esc(i.first_name)} ${esc(i.last_name)}</div>
