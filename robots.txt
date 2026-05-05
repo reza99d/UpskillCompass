@@ -1,12 +1,34 @@
 User-agent: *
 Allow: /
+
+# App-internal routes — disallow across all language prefixes (en at /, sv/de/fr at /<code>/).
 Disallow: /admin
+Disallow: /sv/admin
+Disallow: /de/admin
+Disallow: /fr/admin
 Disallow: /dashboard
+Disallow: /sv/dashboard
+Disallow: /de/dashboard
+Disallow: /fr/dashboard
 Disallow: /manage
-Disallow: /manage/new
+Disallow: /sv/manage
+Disallow: /de/manage
+Disallow: /fr/manage
 Disallow: /my-courses
+Disallow: /sv/my-courses
+Disallow: /de/my-courses
+Disallow: /fr/my-courses
 Disallow: /checkout
+Disallow: /sv/checkout
+Disallow: /de/checkout
+Disallow: /fr/checkout
 Disallow: /sign-in
+Disallow: /sv/sign-in
+Disallow: /de/sign-in
+Disallow: /fr/sign-in
 Disallow: /sign-up
+Disallow: /sv/sign-up
+Disallow: /de/sign-up
+Disallow: /fr/sign-up
 
 Sitemap: https://upskillcompass.com/sitemap.xml

@@ -1,174 +1,1822 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://upskillcompass.com/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-  <url><loc>https://upskillcompass.com/courses</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://upskillcompass.com/for-instructors</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/courses?category=executive-leadership</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses?category=communication</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses?category=strategic-thinking</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses?category=team-building</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses?category=change-management</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses?category=coaching-mentoring</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses?category=emotional-intelligence</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses?category=innovation-digital</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses?category=personal-development</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses?category=project-management</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses?category=agile-scrum</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses?category=it-cybersecurity</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses?category=human-resources</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/strategic-leadership-masterclass</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/leading-with-emotional-intelligence</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/c-suite-communication</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/change-management-fundamentals</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/executive-decision-making</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/board-level-leadership</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/executive-communication-influence</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/high-performance-team-leadership</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/leading-organizational-change</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/coaching-for-senior-leaders</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/strategic-decision-making</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/women-in-leadership</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/conflict-resolution-mastery</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/remote-team-leadership</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/leadership-foundations-first-90-days</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/communication-essentials-new-leaders</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/emotional-intelligence-101</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/building-your-first-team</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/time-management-productivity-leaders</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/digital-literacy-for-leaders</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/resilience-stress-management-leaders</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/leading-diverse-inclusive-teams</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/hybrid-workplace-leadership</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/leading-digital-transformation</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/mentoring-skills-mid-level-managers</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/storytelling-business-leaders</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/difficult-conversations-at-work</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/advanced-emotional-intelligence-senior</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/crisis-leadership-organizational-resilience</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/competitive-strategy-market-positioning</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/innovation-leadership-idea-execution</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/mergers-acquisitions-cultural-integration</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/scaling-teams-10-to-1000</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/executive-coaching-certification-prep</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/geopolitical-risk-strategic-decisions</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/ceo-transition-first-year-playbook</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/leading-in-uncertainty-executive-resilience</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/the-mindful-executive</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/ai-strategy-senior-leaders</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/wenell-ny-som-chef</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/hjartum-ny-som-chef</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/advantum-ny-som-chef</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/hjartum-leda-utan-chef</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/wenell-coachande-ledarskap</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/berghs-ai-framtidens-ledare</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/fu-ugl-utveckling-grupp-ledare</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/ihm-utvecklande-ledarskap-ul</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/wenell-ledarskap-kommunikation</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/wenell-leda-genom-andra</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/fu-konflikthantering-svara-samtal</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/fu-kommunikation-ledarskapet</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/hjartum-certifierad-ledare</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/canea-forandringsledning</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/chefakademin-leda-utan-chef</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/fu-ledarskap-i-praktiken</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/efl-ledarskap-organisationer</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/efl-leading-change</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/berghs-ai-forandringsledare</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/sse-chef-och-ledare</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/sse-executive-leadership-program</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/kth-executive-industrial-management</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/ccl-leading-for-organizational-impact</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/ccl-leadership-development-program</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/imd-breakthrough-program-for-senior-executives</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/imd-high-performance-leadership</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/insead-developing-emerging-leaders-online</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/insead-product-leadership-programme</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/insead-high-impact-leadership-programme</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/stanford-executive-leadership-development</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/dale-carnegie-course</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/franklincovey-7-habits-online-knowledge-certificate</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/franklincovey-7-habits-workshop</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/icf-professional-certified-coach-training</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/icf-associate-certified-coach-training</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/scrum-alliance-certified-agile-leader-2</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/scrum-alliance-certified-agile-leader-1</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/prosci-change-management-certification-in-person</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/prosci-change-management-certification-online</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/ugl-utveckling-av-grupp-och-ledare</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/pmp-exam-prep-boot-camp</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/itil-4-foundation</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/prince2-foundation-practitioner-combined</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/iassc-lean-six-sigma-green-belt</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/asq-certified-six-sigma-green-belt</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/scrum-org-professional-scrum-master-i</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/aws-certified-solutions-architect-associate-boot-camp</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/cissp-certification-boot-camp</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/comptia-security-plus-boot-camp</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/scrum-alliance-certified-scrum-product-owner</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/scrum-alliance-certified-scrummaster</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/aws-certified-devops-engineer-professional</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/hec-leadership-for-executives</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/hec-innovation-et-leadership</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/hec-leadership-strategique</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/safe-product-owner-product-manager</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/safe-leading-safe-agilist</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/shrm-certification-prep-scp</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/shrm-certification-prep-cp</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/microsoft-power-bi-data-analyst-pl-300</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/microsoft-azure-solutions-architect-az-305</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/tableau-desktop-specialist-training</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/icagile-icp-acc</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/insead-aspiring-directors-programme</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/harvard-pon-negotiation-and-leadership</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/karrass-effective-negotiating</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/duarte-persuasive-storytelling-workshop</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/nacd-director-professionalism</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/courses/wharton-finance-accounting-non-financial-manager</loc><lastmod>2026-05-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/66</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/67</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/68</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/69</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/70</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/71</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/72</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/73</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/74</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/75</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/76</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/77</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/78</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/79</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/80</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/81</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/82</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/83</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/100</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/101</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/102</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/103</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/104</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/105</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/106</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/107</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/108</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/109</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/110</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/111</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/112</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/113</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/114</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/115</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/116</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/117</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/118</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/119</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/120</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/121</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/122</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/123</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/124</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/125</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/126</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/127</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://upskillcompass.com/instructors/128</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://upskillcompass.com/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/for-instructors</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/for-instructors"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/for-instructors"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/for-instructors"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/for-instructors"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/for-instructors"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses?category=executive-leadership</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses?category=executive-leadership"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses?category=executive-leadership"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses?category=executive-leadership"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses?category=executive-leadership"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses?category=executive-leadership"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses?category=communication</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses?category=communication"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses?category=communication"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses?category=communication"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses?category=communication"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses?category=communication"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses?category=strategic-thinking</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses?category=strategic-thinking"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses?category=strategic-thinking"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses?category=strategic-thinking"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses?category=strategic-thinking"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses?category=strategic-thinking"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses?category=team-building</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses?category=team-building"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses?category=team-building"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses?category=team-building"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses?category=team-building"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses?category=team-building"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses?category=change-management</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses?category=change-management"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses?category=change-management"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses?category=change-management"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses?category=change-management"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses?category=change-management"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses?category=coaching-mentoring</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses?category=coaching-mentoring"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses?category=coaching-mentoring"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses?category=coaching-mentoring"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses?category=coaching-mentoring"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses?category=coaching-mentoring"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses?category=emotional-intelligence</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses?category=emotional-intelligence"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses?category=emotional-intelligence"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses?category=emotional-intelligence"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses?category=emotional-intelligence"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses?category=emotional-intelligence"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses?category=innovation-digital</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses?category=innovation-digital"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses?category=innovation-digital"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses?category=innovation-digital"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses?category=innovation-digital"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses?category=innovation-digital"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses?category=personal-development</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses?category=personal-development"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses?category=personal-development"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses?category=personal-development"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses?category=personal-development"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses?category=personal-development"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses?category=project-management</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses?category=project-management"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses?category=project-management"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses?category=project-management"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses?category=project-management"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses?category=project-management"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses?category=agile-scrum</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses?category=agile-scrum"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses?category=agile-scrum"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses?category=agile-scrum"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses?category=agile-scrum"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses?category=agile-scrum"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses?category=it-cybersecurity</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses?category=it-cybersecurity"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses?category=it-cybersecurity"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses?category=it-cybersecurity"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses?category=it-cybersecurity"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses?category=it-cybersecurity"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses?category=human-resources</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses?category=human-resources"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses?category=human-resources"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses?category=human-resources"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses?category=human-resources"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses?category=human-resources"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/strategic-leadership-masterclass</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/strategic-leadership-masterclass"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/strategic-leadership-masterclass"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/strategic-leadership-masterclass"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/strategic-leadership-masterclass"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/strategic-leadership-masterclass"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/leading-with-emotional-intelligence</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/leading-with-emotional-intelligence"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/leading-with-emotional-intelligence"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/leading-with-emotional-intelligence"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/leading-with-emotional-intelligence"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/leading-with-emotional-intelligence"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/c-suite-communication</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/c-suite-communication"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/c-suite-communication"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/c-suite-communication"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/c-suite-communication"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/c-suite-communication"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/change-management-fundamentals</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/change-management-fundamentals"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/change-management-fundamentals"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/change-management-fundamentals"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/change-management-fundamentals"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/change-management-fundamentals"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/executive-decision-making</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/executive-decision-making"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/executive-decision-making"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/executive-decision-making"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/executive-decision-making"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/executive-decision-making"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/board-level-leadership</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/board-level-leadership"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/board-level-leadership"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/board-level-leadership"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/board-level-leadership"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/board-level-leadership"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/executive-communication-influence</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/executive-communication-influence"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/executive-communication-influence"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/executive-communication-influence"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/executive-communication-influence"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/executive-communication-influence"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/high-performance-team-leadership</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/high-performance-team-leadership"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/high-performance-team-leadership"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/high-performance-team-leadership"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/high-performance-team-leadership"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/high-performance-team-leadership"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/leading-organizational-change</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/leading-organizational-change"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/leading-organizational-change"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/leading-organizational-change"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/leading-organizational-change"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/leading-organizational-change"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/coaching-for-senior-leaders</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/coaching-for-senior-leaders"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/coaching-for-senior-leaders"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/coaching-for-senior-leaders"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/coaching-for-senior-leaders"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/coaching-for-senior-leaders"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/strategic-decision-making</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/strategic-decision-making"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/strategic-decision-making"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/strategic-decision-making"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/strategic-decision-making"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/strategic-decision-making"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/women-in-leadership</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/women-in-leadership"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/women-in-leadership"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/women-in-leadership"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/women-in-leadership"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/women-in-leadership"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/conflict-resolution-mastery</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/conflict-resolution-mastery"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/conflict-resolution-mastery"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/conflict-resolution-mastery"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/conflict-resolution-mastery"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/conflict-resolution-mastery"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/remote-team-leadership</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/remote-team-leadership"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/remote-team-leadership"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/remote-team-leadership"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/remote-team-leadership"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/remote-team-leadership"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/leadership-foundations-first-90-days</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/leadership-foundations-first-90-days"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/leadership-foundations-first-90-days"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/leadership-foundations-first-90-days"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/leadership-foundations-first-90-days"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/leadership-foundations-first-90-days"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/communication-essentials-new-leaders</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/communication-essentials-new-leaders"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/communication-essentials-new-leaders"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/communication-essentials-new-leaders"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/communication-essentials-new-leaders"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/communication-essentials-new-leaders"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/emotional-intelligence-101</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/emotional-intelligence-101"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/emotional-intelligence-101"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/emotional-intelligence-101"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/emotional-intelligence-101"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/emotional-intelligence-101"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/building-your-first-team</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/building-your-first-team"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/building-your-first-team"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/building-your-first-team"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/building-your-first-team"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/building-your-first-team"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/time-management-productivity-leaders</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/time-management-productivity-leaders"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/time-management-productivity-leaders"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/time-management-productivity-leaders"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/time-management-productivity-leaders"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/time-management-productivity-leaders"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/digital-literacy-for-leaders</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/digital-literacy-for-leaders"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/digital-literacy-for-leaders"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/digital-literacy-for-leaders"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/digital-literacy-for-leaders"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/digital-literacy-for-leaders"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/resilience-stress-management-leaders</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/resilience-stress-management-leaders"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/resilience-stress-management-leaders"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/resilience-stress-management-leaders"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/resilience-stress-management-leaders"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/resilience-stress-management-leaders"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/leading-diverse-inclusive-teams</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/leading-diverse-inclusive-teams"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/leading-diverse-inclusive-teams"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/leading-diverse-inclusive-teams"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/leading-diverse-inclusive-teams"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/leading-diverse-inclusive-teams"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/hybrid-workplace-leadership</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/hybrid-workplace-leadership"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/hybrid-workplace-leadership"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/hybrid-workplace-leadership"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/hybrid-workplace-leadership"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/hybrid-workplace-leadership"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/leading-digital-transformation</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/leading-digital-transformation"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/leading-digital-transformation"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/leading-digital-transformation"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/leading-digital-transformation"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/leading-digital-transformation"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/mentoring-skills-mid-level-managers</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/mentoring-skills-mid-level-managers"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/mentoring-skills-mid-level-managers"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/mentoring-skills-mid-level-managers"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/mentoring-skills-mid-level-managers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/mentoring-skills-mid-level-managers"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/storytelling-business-leaders</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/storytelling-business-leaders"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/storytelling-business-leaders"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/storytelling-business-leaders"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/storytelling-business-leaders"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/storytelling-business-leaders"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/difficult-conversations-at-work</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/difficult-conversations-at-work"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/difficult-conversations-at-work"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/difficult-conversations-at-work"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/difficult-conversations-at-work"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/difficult-conversations-at-work"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/advanced-emotional-intelligence-senior</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/advanced-emotional-intelligence-senior"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/advanced-emotional-intelligence-senior"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/advanced-emotional-intelligence-senior"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/advanced-emotional-intelligence-senior"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/advanced-emotional-intelligence-senior"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/crisis-leadership-organizational-resilience</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/crisis-leadership-organizational-resilience"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/crisis-leadership-organizational-resilience"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/crisis-leadership-organizational-resilience"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/crisis-leadership-organizational-resilience"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/crisis-leadership-organizational-resilience"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/competitive-strategy-market-positioning</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/competitive-strategy-market-positioning"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/competitive-strategy-market-positioning"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/competitive-strategy-market-positioning"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/competitive-strategy-market-positioning"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/competitive-strategy-market-positioning"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/innovation-leadership-idea-execution</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/innovation-leadership-idea-execution"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/innovation-leadership-idea-execution"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/innovation-leadership-idea-execution"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/innovation-leadership-idea-execution"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/innovation-leadership-idea-execution"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/mergers-acquisitions-cultural-integration</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/mergers-acquisitions-cultural-integration"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/mergers-acquisitions-cultural-integration"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/mergers-acquisitions-cultural-integration"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/mergers-acquisitions-cultural-integration"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/mergers-acquisitions-cultural-integration"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/scaling-teams-10-to-1000</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/scaling-teams-10-to-1000"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/scaling-teams-10-to-1000"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/scaling-teams-10-to-1000"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/scaling-teams-10-to-1000"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/scaling-teams-10-to-1000"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/executive-coaching-certification-prep</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/executive-coaching-certification-prep"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/executive-coaching-certification-prep"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/executive-coaching-certification-prep"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/executive-coaching-certification-prep"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/executive-coaching-certification-prep"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/geopolitical-risk-strategic-decisions</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/geopolitical-risk-strategic-decisions"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/geopolitical-risk-strategic-decisions"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/geopolitical-risk-strategic-decisions"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/geopolitical-risk-strategic-decisions"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/geopolitical-risk-strategic-decisions"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/ceo-transition-first-year-playbook</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/ceo-transition-first-year-playbook"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/ceo-transition-first-year-playbook"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/ceo-transition-first-year-playbook"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/ceo-transition-first-year-playbook"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/ceo-transition-first-year-playbook"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/leading-in-uncertainty-executive-resilience</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/leading-in-uncertainty-executive-resilience"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/leading-in-uncertainty-executive-resilience"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/leading-in-uncertainty-executive-resilience"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/leading-in-uncertainty-executive-resilience"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/leading-in-uncertainty-executive-resilience"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/the-mindful-executive</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/the-mindful-executive"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/the-mindful-executive"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/the-mindful-executive"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/the-mindful-executive"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/the-mindful-executive"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/ai-strategy-senior-leaders</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/ai-strategy-senior-leaders"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/ai-strategy-senior-leaders"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/ai-strategy-senior-leaders"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/ai-strategy-senior-leaders"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/ai-strategy-senior-leaders"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/wenell-ny-som-chef</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/wenell-ny-som-chef"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/wenell-ny-som-chef"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/wenell-ny-som-chef"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/wenell-ny-som-chef"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/wenell-ny-som-chef"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/hjartum-ny-som-chef</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/hjartum-ny-som-chef"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/hjartum-ny-som-chef"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/hjartum-ny-som-chef"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/hjartum-ny-som-chef"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/hjartum-ny-som-chef"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/advantum-ny-som-chef</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/advantum-ny-som-chef"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/advantum-ny-som-chef"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/advantum-ny-som-chef"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/advantum-ny-som-chef"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/advantum-ny-som-chef"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/hjartum-leda-utan-chef</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/hjartum-leda-utan-chef"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/hjartum-leda-utan-chef"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/hjartum-leda-utan-chef"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/hjartum-leda-utan-chef"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/hjartum-leda-utan-chef"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/wenell-coachande-ledarskap</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/wenell-coachande-ledarskap"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/wenell-coachande-ledarskap"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/wenell-coachande-ledarskap"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/wenell-coachande-ledarskap"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/wenell-coachande-ledarskap"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/berghs-ai-framtidens-ledare</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/berghs-ai-framtidens-ledare"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/berghs-ai-framtidens-ledare"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/berghs-ai-framtidens-ledare"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/berghs-ai-framtidens-ledare"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/berghs-ai-framtidens-ledare"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/fu-ugl-utveckling-grupp-ledare</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/fu-ugl-utveckling-grupp-ledare"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/fu-ugl-utveckling-grupp-ledare"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/fu-ugl-utveckling-grupp-ledare"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/fu-ugl-utveckling-grupp-ledare"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/fu-ugl-utveckling-grupp-ledare"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/ihm-utvecklande-ledarskap-ul</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/ihm-utvecklande-ledarskap-ul"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/ihm-utvecklande-ledarskap-ul"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/ihm-utvecklande-ledarskap-ul"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/ihm-utvecklande-ledarskap-ul"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/ihm-utvecklande-ledarskap-ul"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/wenell-ledarskap-kommunikation</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/wenell-ledarskap-kommunikation"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/wenell-ledarskap-kommunikation"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/wenell-ledarskap-kommunikation"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/wenell-ledarskap-kommunikation"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/wenell-ledarskap-kommunikation"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/wenell-leda-genom-andra</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/wenell-leda-genom-andra"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/wenell-leda-genom-andra"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/wenell-leda-genom-andra"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/wenell-leda-genom-andra"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/wenell-leda-genom-andra"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/fu-konflikthantering-svara-samtal</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/fu-konflikthantering-svara-samtal"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/fu-konflikthantering-svara-samtal"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/fu-konflikthantering-svara-samtal"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/fu-konflikthantering-svara-samtal"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/fu-konflikthantering-svara-samtal"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/fu-kommunikation-ledarskapet</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/fu-kommunikation-ledarskapet"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/fu-kommunikation-ledarskapet"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/fu-kommunikation-ledarskapet"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/fu-kommunikation-ledarskapet"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/fu-kommunikation-ledarskapet"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/hjartum-certifierad-ledare</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/hjartum-certifierad-ledare"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/hjartum-certifierad-ledare"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/hjartum-certifierad-ledare"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/hjartum-certifierad-ledare"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/hjartum-certifierad-ledare"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/canea-forandringsledning</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/canea-forandringsledning"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/canea-forandringsledning"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/canea-forandringsledning"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/canea-forandringsledning"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/canea-forandringsledning"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/chefakademin-leda-utan-chef</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/chefakademin-leda-utan-chef"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/chefakademin-leda-utan-chef"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/chefakademin-leda-utan-chef"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/chefakademin-leda-utan-chef"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/chefakademin-leda-utan-chef"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/fu-ledarskap-i-praktiken</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/fu-ledarskap-i-praktiken"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/fu-ledarskap-i-praktiken"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/fu-ledarskap-i-praktiken"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/fu-ledarskap-i-praktiken"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/fu-ledarskap-i-praktiken"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/efl-ledarskap-organisationer</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/efl-ledarskap-organisationer"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/efl-ledarskap-organisationer"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/efl-ledarskap-organisationer"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/efl-ledarskap-organisationer"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/efl-ledarskap-organisationer"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/efl-leading-change</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/efl-leading-change"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/efl-leading-change"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/efl-leading-change"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/efl-leading-change"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/efl-leading-change"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/berghs-ai-forandringsledare</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/berghs-ai-forandringsledare"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/berghs-ai-forandringsledare"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/berghs-ai-forandringsledare"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/berghs-ai-forandringsledare"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/berghs-ai-forandringsledare"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/sse-chef-och-ledare</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/sse-chef-och-ledare"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/sse-chef-och-ledare"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/sse-chef-och-ledare"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/sse-chef-och-ledare"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/sse-chef-och-ledare"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/sse-executive-leadership-program</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/sse-executive-leadership-program"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/sse-executive-leadership-program"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/sse-executive-leadership-program"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/sse-executive-leadership-program"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/sse-executive-leadership-program"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/kth-executive-industrial-management</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/kth-executive-industrial-management"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/kth-executive-industrial-management"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/kth-executive-industrial-management"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/kth-executive-industrial-management"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/kth-executive-industrial-management"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/ccl-leading-for-organizational-impact</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/ccl-leading-for-organizational-impact"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/ccl-leading-for-organizational-impact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/ccl-leading-for-organizational-impact"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/ccl-leading-for-organizational-impact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/ccl-leading-for-organizational-impact"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/ccl-leadership-development-program</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/ccl-leadership-development-program"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/ccl-leadership-development-program"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/ccl-leadership-development-program"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/ccl-leadership-development-program"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/ccl-leadership-development-program"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/imd-breakthrough-program-for-senior-executives</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/imd-breakthrough-program-for-senior-executives"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/imd-breakthrough-program-for-senior-executives"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/imd-breakthrough-program-for-senior-executives"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/imd-breakthrough-program-for-senior-executives"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/imd-breakthrough-program-for-senior-executives"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/imd-high-performance-leadership</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/imd-high-performance-leadership"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/imd-high-performance-leadership"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/imd-high-performance-leadership"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/imd-high-performance-leadership"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/imd-high-performance-leadership"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/insead-developing-emerging-leaders-online</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/insead-developing-emerging-leaders-online"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/insead-developing-emerging-leaders-online"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/insead-developing-emerging-leaders-online"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/insead-developing-emerging-leaders-online"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/insead-developing-emerging-leaders-online"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/insead-product-leadership-programme</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/insead-product-leadership-programme"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/insead-product-leadership-programme"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/insead-product-leadership-programme"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/insead-product-leadership-programme"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/insead-product-leadership-programme"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/insead-high-impact-leadership-programme</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/insead-high-impact-leadership-programme"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/insead-high-impact-leadership-programme"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/insead-high-impact-leadership-programme"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/insead-high-impact-leadership-programme"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/insead-high-impact-leadership-programme"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/stanford-executive-leadership-development</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/stanford-executive-leadership-development"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/stanford-executive-leadership-development"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/stanford-executive-leadership-development"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/stanford-executive-leadership-development"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/stanford-executive-leadership-development"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/dale-carnegie-course</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/dale-carnegie-course"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/dale-carnegie-course"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/dale-carnegie-course"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/dale-carnegie-course"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/dale-carnegie-course"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/franklincovey-7-habits-online-knowledge-certificate</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/franklincovey-7-habits-online-knowledge-certificate"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/franklincovey-7-habits-online-knowledge-certificate"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/franklincovey-7-habits-online-knowledge-certificate"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/franklincovey-7-habits-online-knowledge-certificate"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/franklincovey-7-habits-online-knowledge-certificate"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/franklincovey-7-habits-workshop</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/franklincovey-7-habits-workshop"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/franklincovey-7-habits-workshop"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/franklincovey-7-habits-workshop"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/franklincovey-7-habits-workshop"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/franklincovey-7-habits-workshop"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/icf-professional-certified-coach-training</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/icf-professional-certified-coach-training"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/icf-professional-certified-coach-training"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/icf-professional-certified-coach-training"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/icf-professional-certified-coach-training"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/icf-professional-certified-coach-training"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/icf-associate-certified-coach-training</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/icf-associate-certified-coach-training"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/icf-associate-certified-coach-training"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/icf-associate-certified-coach-training"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/icf-associate-certified-coach-training"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/icf-associate-certified-coach-training"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/scrum-alliance-certified-agile-leader-2</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/scrum-alliance-certified-agile-leader-2"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/scrum-alliance-certified-agile-leader-2"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/scrum-alliance-certified-agile-leader-2"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/scrum-alliance-certified-agile-leader-2"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/scrum-alliance-certified-agile-leader-2"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/scrum-alliance-certified-agile-leader-1</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/scrum-alliance-certified-agile-leader-1"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/scrum-alliance-certified-agile-leader-1"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/scrum-alliance-certified-agile-leader-1"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/scrum-alliance-certified-agile-leader-1"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/scrum-alliance-certified-agile-leader-1"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/prosci-change-management-certification-in-person</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/prosci-change-management-certification-in-person"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/prosci-change-management-certification-in-person"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/prosci-change-management-certification-in-person"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/prosci-change-management-certification-in-person"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/prosci-change-management-certification-in-person"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/prosci-change-management-certification-online</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/prosci-change-management-certification-online"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/prosci-change-management-certification-online"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/prosci-change-management-certification-online"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/prosci-change-management-certification-online"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/prosci-change-management-certification-online"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/ugl-utveckling-av-grupp-och-ledare</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/ugl-utveckling-av-grupp-och-ledare"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/ugl-utveckling-av-grupp-och-ledare"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/ugl-utveckling-av-grupp-och-ledare"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/ugl-utveckling-av-grupp-och-ledare"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/ugl-utveckling-av-grupp-och-ledare"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/pmp-exam-prep-boot-camp</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/pmp-exam-prep-boot-camp"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/pmp-exam-prep-boot-camp"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/pmp-exam-prep-boot-camp"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/pmp-exam-prep-boot-camp"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/pmp-exam-prep-boot-camp"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/itil-4-foundation</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/itil-4-foundation"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/itil-4-foundation"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/itil-4-foundation"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/itil-4-foundation"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/itil-4-foundation"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/prince2-foundation-practitioner-combined</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/prince2-foundation-practitioner-combined"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/prince2-foundation-practitioner-combined"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/prince2-foundation-practitioner-combined"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/prince2-foundation-practitioner-combined"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/prince2-foundation-practitioner-combined"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/iassc-lean-six-sigma-green-belt</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/iassc-lean-six-sigma-green-belt"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/iassc-lean-six-sigma-green-belt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/iassc-lean-six-sigma-green-belt"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/iassc-lean-six-sigma-green-belt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/iassc-lean-six-sigma-green-belt"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/asq-certified-six-sigma-green-belt</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/asq-certified-six-sigma-green-belt"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/asq-certified-six-sigma-green-belt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/asq-certified-six-sigma-green-belt"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/asq-certified-six-sigma-green-belt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/asq-certified-six-sigma-green-belt"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/scrum-org-professional-scrum-master-i</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/scrum-org-professional-scrum-master-i"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/scrum-org-professional-scrum-master-i"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/scrum-org-professional-scrum-master-i"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/scrum-org-professional-scrum-master-i"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/scrum-org-professional-scrum-master-i"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/aws-certified-solutions-architect-associate-boot-camp</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/aws-certified-solutions-architect-associate-boot-camp"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/aws-certified-solutions-architect-associate-boot-camp"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/aws-certified-solutions-architect-associate-boot-camp"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/aws-certified-solutions-architect-associate-boot-camp"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/aws-certified-solutions-architect-associate-boot-camp"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/cissp-certification-boot-camp</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/cissp-certification-boot-camp"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/cissp-certification-boot-camp"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/cissp-certification-boot-camp"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/cissp-certification-boot-camp"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/cissp-certification-boot-camp"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/comptia-security-plus-boot-camp</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/comptia-security-plus-boot-camp"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/comptia-security-plus-boot-camp"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/comptia-security-plus-boot-camp"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/comptia-security-plus-boot-camp"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/comptia-security-plus-boot-camp"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/scrum-alliance-certified-scrum-product-owner</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/scrum-alliance-certified-scrum-product-owner"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/scrum-alliance-certified-scrum-product-owner"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/scrum-alliance-certified-scrum-product-owner"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/scrum-alliance-certified-scrum-product-owner"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/scrum-alliance-certified-scrum-product-owner"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/scrum-alliance-certified-scrummaster</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/scrum-alliance-certified-scrummaster"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/scrum-alliance-certified-scrummaster"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/scrum-alliance-certified-scrummaster"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/scrum-alliance-certified-scrummaster"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/scrum-alliance-certified-scrummaster"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/aws-certified-devops-engineer-professional</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/aws-certified-devops-engineer-professional"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/aws-certified-devops-engineer-professional"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/aws-certified-devops-engineer-professional"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/aws-certified-devops-engineer-professional"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/aws-certified-devops-engineer-professional"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/hec-leadership-for-executives</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/hec-leadership-for-executives"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/hec-leadership-for-executives"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/hec-leadership-for-executives"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/hec-leadership-for-executives"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/hec-leadership-for-executives"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/hec-innovation-et-leadership</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/hec-innovation-et-leadership"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/hec-innovation-et-leadership"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/hec-innovation-et-leadership"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/hec-innovation-et-leadership"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/hec-innovation-et-leadership"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/hec-leadership-strategique</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/hec-leadership-strategique"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/hec-leadership-strategique"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/hec-leadership-strategique"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/hec-leadership-strategique"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/hec-leadership-strategique"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/safe-product-owner-product-manager</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/safe-product-owner-product-manager"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/safe-product-owner-product-manager"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/safe-product-owner-product-manager"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/safe-product-owner-product-manager"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/safe-product-owner-product-manager"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/safe-leading-safe-agilist</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/safe-leading-safe-agilist"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/safe-leading-safe-agilist"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/safe-leading-safe-agilist"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/safe-leading-safe-agilist"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/safe-leading-safe-agilist"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/shrm-certification-prep-scp</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/shrm-certification-prep-scp"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/shrm-certification-prep-scp"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/shrm-certification-prep-scp"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/shrm-certification-prep-scp"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/shrm-certification-prep-scp"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/shrm-certification-prep-cp</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/shrm-certification-prep-cp"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/shrm-certification-prep-cp"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/shrm-certification-prep-cp"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/shrm-certification-prep-cp"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/shrm-certification-prep-cp"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/microsoft-power-bi-data-analyst-pl-300</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/microsoft-power-bi-data-analyst-pl-300"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/microsoft-power-bi-data-analyst-pl-300"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/microsoft-power-bi-data-analyst-pl-300"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/microsoft-power-bi-data-analyst-pl-300"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/microsoft-power-bi-data-analyst-pl-300"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/microsoft-azure-solutions-architect-az-305</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/microsoft-azure-solutions-architect-az-305"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/microsoft-azure-solutions-architect-az-305"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/microsoft-azure-solutions-architect-az-305"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/microsoft-azure-solutions-architect-az-305"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/microsoft-azure-solutions-architect-az-305"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/tableau-desktop-specialist-training</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/tableau-desktop-specialist-training"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/tableau-desktop-specialist-training"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/tableau-desktop-specialist-training"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/tableau-desktop-specialist-training"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/tableau-desktop-specialist-training"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/icagile-icp-acc</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/icagile-icp-acc"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/icagile-icp-acc"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/icagile-icp-acc"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/icagile-icp-acc"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/icagile-icp-acc"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/insead-aspiring-directors-programme</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/insead-aspiring-directors-programme"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/insead-aspiring-directors-programme"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/insead-aspiring-directors-programme"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/insead-aspiring-directors-programme"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/insead-aspiring-directors-programme"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/harvard-pon-negotiation-and-leadership</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/harvard-pon-negotiation-and-leadership"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/harvard-pon-negotiation-and-leadership"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/harvard-pon-negotiation-and-leadership"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/harvard-pon-negotiation-and-leadership"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/harvard-pon-negotiation-and-leadership"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/karrass-effective-negotiating</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/karrass-effective-negotiating"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/karrass-effective-negotiating"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/karrass-effective-negotiating"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/karrass-effective-negotiating"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/karrass-effective-negotiating"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/duarte-persuasive-storytelling-workshop</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/duarte-persuasive-storytelling-workshop"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/duarte-persuasive-storytelling-workshop"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/duarte-persuasive-storytelling-workshop"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/duarte-persuasive-storytelling-workshop"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/duarte-persuasive-storytelling-workshop"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/nacd-director-professionalism</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/nacd-director-professionalism"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/nacd-director-professionalism"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/nacd-director-professionalism"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/nacd-director-professionalism"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/nacd-director-professionalism"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/courses/wharton-finance-accounting-non-financial-manager</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/courses/wharton-finance-accounting-non-financial-manager"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/courses/wharton-finance-accounting-non-financial-manager"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/courses/wharton-finance-accounting-non-financial-manager"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/courses/wharton-finance-accounting-non-financial-manager"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/courses/wharton-finance-accounting-non-financial-manager"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/66</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/66"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/66"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/66"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/66"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/66"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/67</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/67"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/67"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/67"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/67"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/67"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/68</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/68"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/68"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/68"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/68"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/68"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/69</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/69"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/69"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/69"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/69"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/69"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/70</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/70"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/70"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/70"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/70"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/70"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/71</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/71"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/71"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/71"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/71"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/71"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/72</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/72"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/72"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/72"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/72"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/72"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/73</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/73"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/73"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/73"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/73"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/73"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/74</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/74"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/74"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/74"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/74"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/74"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/75</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/75"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/75"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/75"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/75"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/75"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/76</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/76"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/76"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/76"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/76"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/76"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/77</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/77"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/77"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/77"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/77"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/77"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/78</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/78"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/78"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/78"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/78"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/78"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/79</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/79"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/79"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/79"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/79"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/79"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/80</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/80"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/80"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/80"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/80"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/80"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/81</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/81"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/81"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/81"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/81"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/81"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/82</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/82"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/82"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/82"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/82"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/82"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/83</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/83"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/83"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/83"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/83"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/83"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/100</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/100"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/100"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/100"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/100"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/100"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/101</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/101"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/101"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/101"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/101"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/101"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/102</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/102"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/102"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/102"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/102"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/102"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/103</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/103"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/103"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/103"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/103"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/103"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/104</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/104"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/104"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/104"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/104"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/104"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/105</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/105"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/105"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/105"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/105"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/105"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/106</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/106"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/106"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/106"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/106"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/106"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/107</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/107"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/107"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/107"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/107"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/107"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/108</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/108"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/108"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/108"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/108"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/108"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/109</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/109"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/109"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/109"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/109"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/109"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/110</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/110"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/110"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/110"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/110"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/110"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/111</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/111"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/111"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/111"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/111"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/111"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/112</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/112"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/112"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/112"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/112"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/112"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/113</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/113"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/113"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/113"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/113"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/113"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/114</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/114"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/114"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/114"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/114"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/114"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/115</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/115"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/115"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/115"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/115"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/115"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/116</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/116"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/116"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/116"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/116"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/116"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/117</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/117"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/117"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/117"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/117"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/117"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/118</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/118"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/118"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/118"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/118"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/118"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/119</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/119"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/119"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/119"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/119"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/119"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/120</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/120"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/120"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/120"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/120"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/120"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/121</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/121"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/121"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/121"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/121"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/121"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/122</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/122"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/122"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/122"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/122"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/122"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/123</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/123"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/123"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/123"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/123"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/123"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/124</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/124"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/124"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/124"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/124"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/124"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/125</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/125"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/125"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/125"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/125"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/125"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/126</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/126"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/126"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/126"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/126"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/126"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/127</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/127"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/127"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/127"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/127"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/127"/>
+  </url>
+  <url>
+    <loc>https://upskillcompass.com/instructors/128</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://upskillcompass.com/instructors/128"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://upskillcompass.com/sv/instructors/128"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://upskillcompass.com/de/instructors/128"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://upskillcompass.com/fr/instructors/128"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://upskillcompass.com/instructors/128"/>
+  </url>
 </urlset>

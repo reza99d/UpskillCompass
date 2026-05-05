@@ -1,19 +1,50 @@
 """
 Generate sitemap.xml from Supabase and write it to ./sitemap.xml.
 
-Includes:
-  - homepage, /courses, /for-instructors
-  - one URL per published course at /courses/<slug>
-  - one URL per category landing at /courses?category=<slug>
-  - one URL per instructor with at least one published course at /instructors/<id>
+Each <url> entry includes <xhtml:link rel="alternate" hreflang="..."/>
+entries for the four supported languages (en at /, then /sv, /de, /fr)
+plus an x-default pointing at the en version. This is the URL-set form
+of hreflang and is the recommended way to declare alternates to Google.
 
-Re-run this any time new courses or instructors get published, then scp the
+Re-run any time new courses or instructors get published, then scp the
 output to the server (see README "Deploy").
 """
-import os
 import psycopg2
 
 SITE = 'https://upskillcompass.com'
+LANGS = ['en', 'sv', 'de', 'fr']
+
+
+def lang_prefix(code):
+    return '' if code == 'en' else f'/{code}'
+
+
+def lang_url(code, base_path):
+    """SITE-rooted URL in the given lang. base_path has no lang prefix."""
+    prefix = lang_prefix(code)
+    if base_path == '/' or base_path == '':
+        return SITE + (prefix or '/')
+    return SITE + prefix + base_path
+
+
+def url_block(base_path, *, lastmod=None, changefreq='weekly', priority='0.7'):
+    parts = ['  <url>']
+    parts.append(f'    <loc>{lang_url("en", base_path)}</loc>')
+    if lastmod:
+        parts.append(f'    <lastmod>{lastmod}</lastmod>')
+    parts.append(f'    <changefreq>{changefreq}</changefreq>')
+    parts.append(f'    <priority>{priority}</priority>')
+    for code in LANGS:
+        parts.append(
+            f'    <xhtml:link rel="alternate" hreflang="{code}" '
+            f'href="{lang_url(code, base_path)}"/>'
+        )
+    parts.append(
+        f'    <xhtml:link rel="alternate" hreflang="x-default" '
+        f'href="{lang_url("en", base_path)}"/>'
+    )
+    parts.append('  </url>')
+    return parts
 
 
 def load_db_url():
@@ -52,27 +83,18 @@ def main():
 
     out = [
         '<?xml version="1.0" encoding="UTF-8"?>',
-        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
-        f'  <url><loc>{SITE}/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>',
-        f'  <url><loc>{SITE}/courses</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
-        f'  <url><loc>{SITE}/for-instructors</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>',
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"',
+        '        xmlns:xhtml="http://www.w3.org/1999/xhtml">',
     ]
+    out += url_block('/',                changefreq='daily',   priority='1.0')
+    out += url_block('/courses',         changefreq='daily',   priority='0.9')
+    out += url_block('/for-instructors', changefreq='monthly', priority='0.5')
     for (slug,) in categories:
-        out.append(
-            f'  <url><loc>{SITE}/courses?category={slug}</loc>'
-            '<changefreq>weekly</changefreq><priority>0.7</priority></url>'
-        )
+        out += url_block(f'/courses?category={slug}', changefreq='weekly', priority='0.7')
     for (slug, lastmod) in courses:
-        out.append(
-            f'  <url><loc>{SITE}/courses/{slug}</loc>'
-            f'<lastmod>{lastmod.isoformat()}</lastmod>'
-            '<changefreq>weekly</changefreq><priority>0.7</priority></url>'
-        )
+        out += url_block(f'/courses/{slug}', lastmod=lastmod.isoformat(), changefreq='weekly', priority='0.7')
     for (uid,) in instructors:
-        out.append(
-            f'  <url><loc>{SITE}/instructors/{uid}</loc>'
-            '<changefreq>monthly</changefreq><priority>0.5</priority></url>'
-        )
+        out += url_block(f'/instructors/{uid}', changefreq='monthly', priority='0.5')
     out.append('</urlset>')
 
     with open('sitemap.xml', 'w') as f:

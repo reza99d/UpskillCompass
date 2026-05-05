@@ -1353,6 +1353,30 @@ function setPageMeta(opts) {
   let canon = document.head.querySelector('link[rel="canonical"]');
   if (!canon) { canon = document.createElement('link'); canon.setAttribute('rel','canonical'); document.head.appendChild(canon); }
   canon.setAttribute('href', window.location.origin + window.location.pathname);
+
+  // hreflang alternates: every page exists in en (default, no prefix), sv,
+  // de, fr — plus an x-default pointing at the en version.
+  document.head.querySelectorAll('link[rel="alternate"][hreflang]').forEach(l => l.remove());
+  const [, basePath] = stripLangPrefix(window.location.pathname);
+  const search = window.location.search;
+  for (const code of LANG_CODES) {
+    const link = document.createElement('link');
+    link.setAttribute('rel', 'alternate');
+    link.setAttribute('hreflang', code);
+    link.setAttribute('href', langUrl(code, basePath, search));
+    document.head.appendChild(link);
+  }
+  const xd = document.createElement('link');
+  xd.setAttribute('rel', 'alternate');
+  xd.setAttribute('hreflang', 'x-default');
+  xd.setAttribute('href', langUrl('en', basePath, search));
+  document.head.appendChild(xd);
+
+  // Update og:locale with the active language so social previews are right.
+  const ogLocaleMap = { en: 'en_US', sv: 'sv_SE', de: 'de_DE', fr: 'fr_FR' };
+  setM('meta[property="og:locale"]', 'property', ogLocaleMap[currentLang] || 'en_US');
+  // Keep <html lang> in sync — assistive tech and search engines key off it.
+  document.documentElement.lang = currentLang;
 }
 
 // Inject (or remove) a JSON-LD <script> for the current page.
@@ -1368,38 +1392,80 @@ function setJsonLd(obj) {
   el.textContent = JSON.stringify(obj);
 }
 
+// hreflang language-prefix scheme: en is the default and sits at /,
+// other langs live at /<code>/... (sv/de/fr). Keep LANG_CODES in sync
+// with the i18n table T at the top of the script.
+const LANG_CODES = ['en', 'sv', 'de', 'fr'];
+
+function langPrefix(code) {
+  return (code && code !== 'en' && LANG_CODES.includes(code)) ? '/' + code : '';
+}
+
+// `/sv/courses/x` -> ['sv', '/courses/x']; `/courses/x` -> ['en', '/courses/x'].
+function stripLangPrefix(pathname) {
+  const m = (pathname || '/').match(/^\/([a-z]{2})(?:\/(.*))?$/);
+  if (m && LANG_CODES.includes(m[1]) && m[1] !== 'en') {
+    return [m[1], '/' + (m[2] || '')];
+  }
+  return ['en', pathname || '/'];
+}
+
+// Compose a fully-qualified URL for (langCode, basePath, search). basePath
+// here is the stripped path (no lang prefix). The "homepage" case keeps
+// /sv (no trailing slash) consistent with routeToUrl.
+function langUrl(code, basePath, search) {
+  const prefix = langPrefix(code);
+  if (basePath === '/' || basePath === '') {
+    return SITE_URL + (prefix || '/') + (search || '');
+  }
+  return SITE_URL + prefix + basePath + (search || '');
+}
+
 // (page, data) -> URL path. Keep in sync with urlToRoute below.
 function routeToUrl(page, data) {
+  let basePath;
   switch (page) {
-    case 'homepage': return '/';
+    case 'homepage': basePath = '/'; break;
     case 'catalog': {
-      if (!data || typeof data !== 'object') return '/courses';
+      if (!data || typeof data !== 'object') { basePath = '/courses'; break; }
       const p = new URLSearchParams();
       ['country','category','level','format','instructor','search','sort'].forEach(k => { if (data[k]) p.set(k, data[k]); });
       if (data.startdate) p.set('start_date', data.startdate);
       if (data.price)     p.set('price', data.price);
       const qs = p.toString();
-      return '/courses' + (qs ? '?' + qs : '');
+      basePath = '/courses' + (qs ? '?' + qs : '');
+      break;
     }
-    case 'detail':         return '/courses/' + (data == null ? '' : data);
-    case 'instructor':     return '/instructors/' + (data == null ? '' : data);
-    case 'auth':           return data === 'signup' ? '/sign-up' : '/sign-in';
-    case 'dashboard':      return '/dashboard';
-    case 'admin':          return '/admin';
-    case 'my-courses':     return '/my-courses';
-    case 'manage-courses': return '/manage';
-    case 'course-form':    return '/manage/new';
-    case 'premium':        return '/premium';
-    case 'for-instructors': return '/for-instructors';
-    case 'checkout':       return '/checkout';
-    default: return '/';
+    case 'detail':         basePath = '/courses/' + (data == null ? '' : data); break;
+    case 'instructor':     basePath = '/instructors/' + (data == null ? '' : data); break;
+    case 'auth':           basePath = data === 'signup' ? '/sign-up' : '/sign-in'; break;
+    case 'dashboard':      basePath = '/dashboard'; break;
+    case 'admin':          basePath = '/admin'; break;
+    case 'my-courses':     basePath = '/my-courses'; break;
+    case 'manage-courses': basePath = '/manage'; break;
+    case 'course-form':    basePath = '/manage/new'; break;
+    case 'premium':        basePath = '/premium'; break;
+    case 'for-instructors': basePath = '/for-instructors'; break;
+    case 'checkout':       basePath = '/checkout'; break;
+    default: basePath = '/';
   }
+  const prefix = langPrefix(currentLang);
+  if (basePath === '/') return prefix || '/';
+  return prefix + basePath;
 }
 
-// URL -> [page, data]. Keep in sync with routeToUrl above.
+// URL -> [page, data]. Also syncs currentLang + <html lang> from URL.
 function urlToRoute() {
-  const path = window.location.pathname || '/';
-  const sp   = new URLSearchParams(window.location.search);
+  const fullPath = window.location.pathname || '/';
+  const [lang, path] = stripLangPrefix(fullPath);
+  if (currentLang !== lang) {
+    currentLang = lang;
+    try { localStorage.setItem('lp_lang', lang); } catch(_) {}
+    _featuredCache = null; // i18n strings on cards change with lang
+  }
+  document.documentElement.lang = lang;
+
+  const sp = new URLSearchParams(window.location.search);
   if (path === '/' || path === '') return ['homepage', null];
   if (path === '/courses') {
     const data = {};
@@ -1832,9 +1898,9 @@ async function renderDetail(app, cidOrSlug) {
       cid = lookup[0].id;
     }
     const c=await api(`/courses/${cid}`);
-    // SEO: canonicalise URL to slug, update <title> + meta + JSON-LD Course.
+    // SEO: canonicalise URL to slug (preserving any active language prefix).
     if (c.slug) {
-      const desired = '/courses/' + c.slug;
+      const desired = routeToUrl('detail', c.slug);
       if (window.location.pathname !== desired) {
         try { history.replaceState({page:'detail'}, '', desired + window.location.search); } catch(_) {}
       }
