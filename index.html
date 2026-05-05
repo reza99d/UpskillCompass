@@ -5,6 +5,45 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' fill='%23d4a017'/><circle cx='32' cy='32' r='30' fill='%230f2440'/><circle cx='32' cy='32' r='28' fill='none' stroke='%23d4a017' stroke-width='2'/><g transform='rotate(45 32 32)'><polygon points='32,10 28,32 32,32' fill='%23f0cc5b'/><polygon points='32,10 36,32 32,32' fill='%23d4a017'/><polygon points='32,54 28,32 32,32' fill='%23bdd4ea'/><polygon points='32,54 36,32 32,32' fill='%2389b3d6'/></g><circle cx='32' cy='32' r='3' fill='%23d4a017' stroke='%230f2440' stroke-width='0.5'/></svg>">
 <title>UpskillCompass — World's largest leadership training database</title>
+<meta name="description" content="Discover and compare 100+ leadership and certification training programs from top providers — CCL, IMD, INSEAD, Wharton, Harvard PON, Scrum Alliance, AWS, ISC2, PMI and more. Filter by format, level, language, country and price.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://upskillcompass.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpskillCompass">
+<meta property="og:title" content="UpskillCompass — World's largest leadership training database">
+<meta property="og:description" content="Discover and compare 100+ leadership and certification training programs from top providers — CCL, IMD, INSEAD, Wharton, Harvard PON, Scrum Alliance, AWS, ISC2, PMI and more.">
+<meta property="og:url" content="https://upskillcompass.com/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="sv_SE">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="UpskillCompass — World's largest leadership training database">
+<meta name="twitter:description" content="Discover and compare 100+ leadership and certification training programs from top providers worldwide.">
+<script type="application/ld+json" id="seo-website-jsonld">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "UpskillCompass",
+  "url": "https://upskillcompass.com/",
+  "description": "Discovery platform for leadership and certification training programs from top providers worldwide.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://upskillcompass.com/courses?search={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json" id="seo-org-jsonld">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "UpskillCompass",
+  "url": "https://upskillcompass.com/",
+  "logo": "https://upskillcompass.com/favicon.png",
+  "sameAs": []
+}
+</script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -1280,9 +1319,132 @@ function fmtPrice(p, currency) {
 // ============================================================
 // ROUTER
 // ============================================================
-function navigate(page, data) {
+const SITE_URL      = 'https://upskillcompass.com';
+const DEFAULT_TITLE = "UpskillCompass — World's largest leadership training database";
+const DEFAULT_DESC  = "Discover and compare 100+ leadership and certification training programs from top providers — CCL, IMD, INSEAD, Wharton, Harvard PON, Scrum Alliance, AWS, ISC2, PMI and more. Filter by format, level, language, country and price.";
+
+// Update <title>, meta description, og:* and twitter:* tags + canonical link.
+function setPageMeta(opts) {
+  opts = opts || {};
+  const title = opts.title || DEFAULT_TITLE;
+  const desc  = opts.description || DEFAULT_DESC;
+  document.title = title;
+  const setM = (sel, attr, val) => {
+    let el = document.head.querySelector(sel);
+    if (!el) {
+      el = document.createElement('meta');
+      const m = sel.match(/meta\[(name|property)="([^"]+)"\]/);
+      if (m) el.setAttribute(m[1], m[2]);
+      document.head.appendChild(el);
+    }
+    el.setAttribute('content', val);
+  };
+  setM('meta[name="description"]', 'name', desc);
+  setM('meta[property="og:title"]', 'property', title);
+  setM('meta[property="og:description"]', 'property', desc);
+  setM('meta[property="og:url"]', 'property', window.location.origin + window.location.pathname);
+  setM('meta[property="og:type"]', 'property', opts.ogType || 'website');
+  setM('meta[name="twitter:title"]', 'name', title);
+  setM('meta[name="twitter:description"]', 'name', desc);
+  let canon = document.head.querySelector('link[rel="canonical"]');
+  if (!canon) { canon = document.createElement('link'); canon.setAttribute('rel','canonical'); document.head.appendChild(canon); }
+  canon.setAttribute('href', window.location.origin + window.location.pathname);
+}
+
+// Inject (or remove) a JSON-LD <script> for the current page.
+function setJsonLd(obj) {
+  let el = document.getElementById('seo-page-jsonld');
+  if (!obj) { if (el) el.remove(); return; }
+  if (!el) {
+    el = document.createElement('script');
+    el.type = 'application/ld+json';
+    el.id = 'seo-page-jsonld';
+    document.head.appendChild(el);
+  }
+  el.textContent = JSON.stringify(obj);
+}
+
+// (page, data) -> URL path. Keep in sync with urlToRoute below.
+function routeToUrl(page, data) {
+  switch (page) {
+    case 'homepage': return '/';
+    case 'catalog': {
+      if (!data || typeof data !== 'object') return '/courses';
+      const p = new URLSearchParams();
+      ['country','category','level','format','instructor','search','sort'].forEach(k => { if (data[k]) p.set(k, data[k]); });
+      if (data.startdate) p.set('start_date', data.startdate);
+      if (data.price)     p.set('price', data.price);
+      const qs = p.toString();
+      return '/courses' + (qs ? '?' + qs : '');
+    }
+    case 'detail':         return '/courses/' + (data == null ? '' : data);
+    case 'instructor':     return '/instructors/' + (data == null ? '' : data);
+    case 'auth':           return data === 'signup' ? '/sign-up' : '/sign-in';
+    case 'dashboard':      return '/dashboard';
+    case 'admin':          return '/admin';
+    case 'my-courses':     return '/my-courses';
+    case 'manage-courses': return '/manage';
+    case 'course-form':    return '/manage/new';
+    case 'premium':        return '/premium';
+    case 'for-instructors': return '/for-instructors';
+    case 'checkout':       return '/checkout';
+    default: return '/';
+  }
+}
+
+// URL -> [page, data]. Keep in sync with routeToUrl above.
+function urlToRoute() {
+  const path = window.location.pathname || '/';
+  const sp   = new URLSearchParams(window.location.search);
+  if (path === '/' || path === '') return ['homepage', null];
+  if (path === '/courses') {
+    const data = {};
+    ['country','category','level','format','instructor','search','sort'].forEach(k => {
+      const v = sp.get(k); if (v) data[k] = v;
+    });
+    if (sp.get('start_date')) data.startdate = sp.get('start_date');
+    if (sp.get('price'))      data.price     = sp.get('price');
+    return ['catalog', Object.keys(data).length ? data : null];
+  }
+  let m;
+  if ((m = path.match(/^\/courses\/(.+)$/)))     return ['detail', decodeURIComponent(m[1])];
+  if ((m = path.match(/^\/instructors\/(.+)$/))) {
+    const v = decodeURIComponent(m[1]);
+    return ['instructor', /^\d+$/.test(v) ? parseInt(v) : v];
+  }
+  if (path === '/sign-in')        return ['auth', 'signin'];
+  if (path === '/sign-up')        return ['auth', 'signup'];
+  if (path === '/dashboard')      return ['dashboard', null];
+  if (path === '/admin')          return ['admin', null];
+  if (path === '/my-courses')     return ['my-courses', null];
+  if (path === '/manage')         return ['manage-courses', null];
+  if (path === '/manage/new')     return ['course-form', null];
+  if (path === '/premium')        return ['premium', null];
+  if (path === '/for-instructors') return ['for-instructors', null];
+  if (path === '/checkout')       return ['checkout', null];
+  return ['homepage', null];
+}
+
+function navigate(page, data, options) {
+  options = options || {};
   window.__currentPage = page;
   window.__pageData = data;
+  // Sync URL into history. skipHistory=true is used by the popstate handler
+  // (URL is already correct when the browser fires popstate).
+  if (!options.skipHistory) {
+    try {
+      const url = routeToUrl(page, data);
+      const cur = window.location.pathname + window.location.search;
+      if (cur !== url) {
+        if (options.replace) history.replaceState({ page }, '', url);
+        else                 history.pushState({ page },  '', url);
+      }
+    } catch (_) {}
+  }
+  // Reset SEO state. renderDetail / renderInstructor / renderCatalog override
+  // these in their bodies; everything else inherits the homepage defaults.
+  setPageMeta({});
+  setJsonLd(null);
   window.scrollTo(0, 0);
   renderHeader();
   const app = document.getElementById('app');
@@ -1307,6 +1469,11 @@ function navigate(page, data) {
     default: renderHomepage(app);
   }
 }
+
+window.addEventListener('popstate', () => {
+  const [p, d] = urlToRoute();
+  navigate(p, d, { skipHistory: true });
+});
 
 // ============================================================
 // HEADER
@@ -1359,7 +1526,7 @@ async function renderFeaturedSidebar() {
     sb_el.innerHTML = `<h4>\u2B50 ${t('featured')}</h4>` + _featuredCache.map(c => {
       const instr = c.users ? `${c.users.first_name} ${c.users.last_name}` : '';
       const cat = c.categories ? c.categories.name : '';
-      return `<div class="fs-card" onclick="navigate('detail',${c.id})">
+      return `<div class="fs-card" onclick="navigate('detail','${js(c.slug || String(c.id))}')">
         <div class="fs-card-title">${esc(c.title)}</div>
         <div class="fs-card-instructor">${esc(instr)}</div>
         <div class="fs-card-meta">
@@ -1395,7 +1562,7 @@ function renderFooter() {
 // ============================================================
 function courseCard(c) {
   const avg = c.avg_rating ? Number(c.avg_rating).toFixed(1) : '0.0';
-  return `<div class="card course-card card-clickable" onclick="navigate('detail',${c.id})">
+  return `<div class="card course-card card-clickable" onclick="navigate('detail','${js(c.slug || String(c.id))}')">
     <div class="placeholder-img" style="min-height:160px;${c.image_url?'background:#0f2440;':`background:${grad(c.id)};`}position:relative;overflow:hidden;">${c.image_url?`<img src="${esc(c.image_url)}" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">`:`<span style="color:rgba(255,255,255,.6);z-index:1;">[ Course Image ]</span>`}${c.is_featured?`<span class="badge badge-gold" style="position:absolute;top:12px;left:12px;z-index:3;">${t('featured')}</span>`:''}</div>
     <div class="card-body">
       <div class="card-category">${esc(c.category_name||'')}</div>
@@ -1473,6 +1640,12 @@ async function renderHomepage(app) {
 // ============================================================
 async function renderCatalog(app, fd) {
   fd = fd || {};
+  setPageMeta({
+    title: fd.search ? `"${fd.search}" — UpskillCompass courses`
+         : fd.category ? `${fd.category} — UpskillCompass courses`
+         : 'All courses — UpskillCompass',
+    description: 'Browse 100+ leadership and certification training programs. Filter by category, level, format, country, price, instructor and start date.'
+  });
   app.innerHTML = `<div class="section" style="padding-top:32px;"><div class="container">
     <div class="breadcrumb"><a onclick="navigate('homepage')">${t('home')}</a> <span>&rsaquo;</span> ${t('catalog_title')}</div>
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;">
@@ -1640,10 +1813,56 @@ async function renderCatalog(app, fd) {
 // ============================================================
 // COURSE DETAIL
 // ============================================================
-async function renderDetail(app, cid) {
+async function renderDetail(app, cidOrSlug) {
   app.innerHTML='<div class="page-loader"><div class="loading-spinner"></div></div>';
   try {
-    const c=await api(`/courses/${cid}`);const avg=c.avg_rating?Number(c.avg_rating).toFixed(1):'0.0';const disc=c.original_price?Math.round((1-c.price/c.original_price)*100):0;
+    // Accept either an integer course id or a string slug. If it's a slug,
+    // resolve it to an id first so the existing /courses/:id endpoint works.
+    let cid = cidOrSlug;
+    if (typeof cidOrSlug === 'string' && !/^\d+$/.test(cidOrSlug)) {
+      const lookup = await sb(`courses?select=id&slug=eq.${encodeURIComponent(cidOrSlug)}&limit=1`);
+      if (!lookup || !lookup[0]) {
+        app.innerHTML = `<div class="section"><div class="container"><h2>Course not found</h2></div></div>`;
+        return;
+      }
+      cid = lookup[0].id;
+    }
+    const c=await api(`/courses/${cid}`);
+    // SEO: canonicalise URL to slug, update <title> + meta + JSON-LD Course.
+    if (c.slug) {
+      const desired = '/courses/' + c.slug;
+      if (window.location.pathname !== desired) {
+        try { history.replaceState({page:'detail'}, '', desired + window.location.search); } catch(_) {}
+      }
+    }
+    setPageMeta({
+      title: c.title + ' — UpskillCompass',
+      description: c.short_description || (c.description ? String(c.description).slice(0, 200) : DEFAULT_DESC),
+      ogType: 'website'
+    });
+    const courseLd = {
+      '@context': 'https://schema.org',
+      '@type': 'Course',
+      name: c.title,
+      description: c.short_description || c.description || '',
+      url: SITE_URL + '/courses/' + (c.slug || cid),
+      provider: { '@type': 'Organization', name: 'UpskillCompass', sameAs: SITE_URL + '/' }
+    };
+    if (c.instructor_name) courseLd.instructor = { '@type': 'Person', name: c.instructor_name };
+    if (c.price !== undefined && c.price !== null) {
+      courseLd.offers = {
+        '@type': 'Offer',
+        price: Number(c.price),
+        priceCurrency: c.currency || 'USD',
+        url: SITE_URL + '/courses/' + (c.slug || cid),
+        availability: 'https://schema.org/InStock'
+      };
+    }
+    if (c.duration_hours) courseLd.timeRequired = 'PT' + Math.round(Number(c.duration_hours)) + 'H';
+    if (c.level)          courseLd.educationalLevel = c.level;
+    if (c.category_name)  courseLd.about = c.category_name;
+    setJsonLd(courseLd);
+    const avg=c.avg_rating?Number(c.avg_rating).toFixed(1):'0.0';const disc=c.original_price?Math.round((1-c.price/c.original_price)*100):0;
     app.innerHTML=`
     <div style="background:linear-gradient(135deg,var(--navy-50),var(--slate-50));padding:40px 0;"><div class="container">
       <div class="breadcrumb"><a onclick="navigate('homepage')">${t('home')}</a> <span>&rsaquo;</span> <a onclick="navigate('catalog')">${t('courses')}</a> <span>&rsaquo;</span> ${esc(c.title)}</div>
@@ -2052,6 +2271,20 @@ async function renderInstructor(app, iid) {
   app.innerHTML='<div class="page-loader"><div class="loading-spinner"></div></div>';
   try{
     const i=await api(`/instructors/${iid}`);
+    setPageMeta({
+      title: `${i.first_name || ''} ${i.last_name || ''}`.trim() + ' — UpskillCompass',
+      description: i.bio || (i.title ? `${i.title} on UpskillCompass.` : `Instructor profile on UpskillCompass.`),
+      ogType: 'profile'
+    });
+    setJsonLd({
+      '@context': 'https://schema.org',
+      '@type': 'Person',
+      name: `${i.first_name || ''} ${i.last_name || ''}`.trim(),
+      jobTitle: i.title || undefined,
+      description: i.bio || undefined,
+      url: SITE_URL + '/instructors/' + iid,
+      worksFor: { '@type': 'Organization', name: i.company || 'UpskillCompass' }
+    });
     app.innerHTML=`
     <div style="background:linear-gradient(135deg,var(--navy-50),var(--slate-50));padding:48px 0;"><div class="container">
       <div class="breadcrumb"><a onclick="navigate('homepage')">${t('home')}</a> <span>&rsaquo;</span> ${esc(i.first_name)} ${esc(i.last_name)}</div>
@@ -2532,7 +2765,7 @@ async function renderAdmin(app) {
     const m=document.getElementById('admin-content');
     if(tab==='overview'){m.innerHTML='<div class="page-loader"><div class="loading-spinner"></div></div>';try{const[cats,cd]=await Promise.all([api('/categories'),api('/courses?per_page=100')]);const cs=cd.courses||[];const ts=cs.reduce((s,c)=>s+(c.enrollment_count||0),0);const ar=cs.length?(cs.reduce((s,c)=>s+(c.avg_rating||0),0)/cs.length).toFixed(1):'N/A';m.innerHTML=`<h1 style="font-size:26px;margin-bottom:32px;">${t('admin_overview')}</h1><div class="grid-4" style="margin-bottom:32px;"><div class="stat-card" style="border-top:3px solid var(--teal-500);"><div class="stat-label">${t('total_courses')}</div><div class="stat-value">${cs.length}</div></div><div class="stat-card" style="border-top:3px solid var(--navy-500);"><div class="stat-label">${t('total_enrollments')}</div><div class="stat-value">${ts}</div></div><div class="stat-card" style="border-top:3px solid var(--gold-500);"><div class="stat-label">${t('categories_label')}</div><div class="stat-value">${cats.length}</div></div><div class="stat-card" style="border-top:3px solid var(--slate-500);"><div class="stat-label">${t('avg_rating')}</div><div class="stat-value">${ar}</div></div></div><h3 style="font-size:18px;margin-bottom:16px;">${t('categories_label')}</h3><table class="data-table"><thead><tr><th>${t('category')}</th><th>${t('slug')}</th><th>${t('courses')}</th></tr></thead><tbody>${cats.map(c=>`<tr><td><strong>${esc(c.name)}</strong></td><td>${esc(c.slug)}</td><td>${c.course_count}</td></tr>`).join('')}</tbody></table>`;}catch(e){m.innerHTML=`<p style="color:var(--red-600);">${esc(e.message)}</p>`;}}
     else if(tab==='users'){m.innerHTML=`<h1 style="font-size:26px;margin-bottom:32px;">${t('user_mgmt')}</h1><div style="display:flex;gap:12px;margin-bottom:24px;"><input class="input" id="adm-search" placeholder="${t('search_email')}" style="max-width:400px;"><button class="btn btn-primary btn-sm" onclick="admSearch()">${t('search')}</button></div><div id="adm-res"><p style="color:var(--slate-500);">${t('search_email')}</p></div>`;window.admSearch=async function(){const q=document.getElementById('adm-search').value.trim();if(!q)return;try{const r=await api(`/search?q=${encodeURIComponent(q)}`);const ins=r.instructors||[];document.getElementById('adm-res').innerHTML=ins.length?`<table class="data-table"><thead><tr><th>${t('name')}</th><th>ID</th></tr></thead><tbody>${ins.map(i=>`<tr><td>${esc(i.first_name)} ${esc(i.last_name)}</td><td>${i.id}</td></tr>`).join('')}</tbody></table>`:`<p style="color:var(--slate-500);">${t('no_courses')}</p>`;}catch(e){document.getElementById('adm-res').innerHTML=`<p style="color:var(--red-600);">${esc(e.message)}</p>`;}};}
-    else if(tab==='courses'){m.innerHTML=`<h1 style="font-size:26px;margin-bottom:32px;">${t('course_mgmt')}</h1><div class="page-loader"><div class="loading-spinner"></div></div>`;try{const d=await api('/courses?per_page=50');const cs=d.courses||[];m.innerHTML=`<h1 style="font-size:26px;margin-bottom:32px;">${t('course_mgmt')}</h1><p style="color:var(--slate-500);margin-bottom:24px;">${cs.length} ${t('published_courses')}</p><table class="data-table"><thead><tr><th>${t('course')}</th><th>${t('instructor')}</th><th>${t('price')}</th><th>${t('students')}</th><th>${t('rating')}</th><th>${t('actions')}</th></tr></thead><tbody>${cs.map(c=>`<tr><td><strong style="cursor:pointer;" onclick="navigate('detail',${c.id})">${esc(c.title)}</strong></td><td>${esc(c.instructor_name||'')}</td><td>${fmtPrice(c.price,c.currency)}</td><td>${c.enrollment_count||0}</td><td>${starsHtml(c.avg_rating||0)} ${c.avg_rating?Number(c.avg_rating).toFixed(1):'-'}</td><td><a style="color:var(--navy-700);cursor:pointer;" onclick="navigate('detail',${c.id})">${t('view')}</a></td></tr>`).join('')}</tbody></table>`;}catch(e){m.innerHTML=`<p style="color:var(--red-600);">${esc(e.message)}</p>`;}}
+    else if(tab==='courses'){m.innerHTML=`<h1 style="font-size:26px;margin-bottom:32px;">${t('course_mgmt')}</h1><div class="page-loader"><div class="loading-spinner"></div></div>`;try{const d=await api('/courses?per_page=50');const cs=d.courses||[];m.innerHTML=`<h1 style="font-size:26px;margin-bottom:32px;">${t('course_mgmt')}</h1><p style="color:var(--slate-500);margin-bottom:24px;">${cs.length} ${t('published_courses')}</p><table class="data-table"><thead><tr><th>${t('course')}</th><th>${t('instructor')}</th><th>${t('price')}</th><th>${t('students')}</th><th>${t('rating')}</th><th>${t('actions')}</th></tr></thead><tbody>${cs.map(c=>`<tr><td><strong style="cursor:pointer;" onclick="navigate('detail','${js(c.slug || String(c.id))}')">${esc(c.title)}</strong></td><td>${esc(c.instructor_name||'')}</td><td>${fmtPrice(c.price,c.currency)}</td><td>${c.enrollment_count||0}</td><td>${starsHtml(c.avg_rating||0)} ${c.avg_rating?Number(c.avg_rating).toFixed(1):'-'}</td><td><a style="color:var(--navy-700);cursor:pointer;" onclick="navigate('detail','${js(c.slug || String(c.id))}')">${t('view')}</a></td></tr>`).join('')}</tbody></table>`;}catch(e){m.innerHTML=`<p style="color:var(--red-600);">${esc(e.message)}</p>`;}}
     else if(tab==='orders'){m.innerHTML=`<h1 style="font-size:26px;margin-bottom:32px;">${t('orders')}</h1><div class="page-loader"><div class="loading-spinner"></div></div>`;try{const d=await api('/courses?per_page=50');const cs=d.courses||[];const te=cs.reduce((s,c)=>s+(c.enrollment_count||0),0);m.innerHTML=`<h1 style="font-size:26px;margin-bottom:32px;">${t('orders')}</h1><div class="grid-3" style="margin-bottom:32px;"><div class="stat-card" style="border-top:3px solid var(--teal-500);"><div class="stat-label">${t('total_enrollments')}</div><div class="stat-value">${te}</div></div><div class="stat-card" style="border-top:3px solid var(--navy-500);"><div class="stat-label">${t('published_courses')}</div><div class="stat-value">${cs.length}</div></div><div class="stat-card" style="border-top:3px solid var(--gold-500);"><div class="stat-label">${t('avg_price')}</div><div class="stat-value">$${cs.length?Math.round(cs.reduce((s,c)=>s+Number(c.price),0)/cs.length):0}</div></div></div>`;}catch(e){m.innerHTML=`<p style="color:var(--red-600);">${esc(e.message)}</p>`;}}
   };
   aTab('overview');
@@ -2557,11 +2790,16 @@ async function renderAdmin(app) {
     try { toast(t('email_confirmed'), 'success'); } catch(_) {}
   }
 
-  // 3. Render the first page. After email confirmation, instructors go to their
-  //    dashboard; everyone else (admins, legacy learners) goes to the homepage,
-  //    since renderDashboard is instructor-gated and would bounce them to signin.
+  // 3. Render the first page. After email confirmation, instructors go to
+  //    their dashboard; otherwise honour the URL via urlToRoute so deep links
+  //    like /courses/<slug> render the right page.
   const role = state.user && state.user.role;
-  navigate(justConfirmed && role === 'instructor' ? 'dashboard' : 'homepage');
+  if (justConfirmed && role === 'instructor') {
+    navigate('dashboard', null, { replace: true });
+  } else {
+    const [p, d] = urlToRoute();
+    navigate(p, d, { replace: true });
+  }
 })();
 </script>
 </body>

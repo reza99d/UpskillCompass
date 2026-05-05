@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /dashboard
+Disallow: /manage
+Disallow: /manage/new
+Disallow: /my-courses
+Disallow: /checkout
+Disallow: /sign-in
+Disallow: /sign-up
+
+Sitemap: https://upskillcompass.com/sitemap.xml
