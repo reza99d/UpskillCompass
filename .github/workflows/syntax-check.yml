@@ -1,0 +1,28 @@
+name: Inline-script syntax check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Extract inline script from index.html
+        run: |
+          python3 - <<'PY'
+          import re
+          html = open('index.html').read()
+          # The big inline script is the last <script> in the file.
+          m = list(re.finditer(r'<script[^>]*>(.*?)</script>', html, re.DOTALL))
+          if not m:
+              raise SystemExit('No <script> tag found in index.html')
+          open('check.js', 'w').write(m[-1].group(1))
+          print(f'Extracted {len(m[-1].group(1))} chars from inline <script>')
+          PY
+
+      - name: Syntax-check with node
+        run: node --check check.js
