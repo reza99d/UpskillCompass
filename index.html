@@ -2477,7 +2477,7 @@ function renderAuth(app, tab) {
       <div class="form-group"><label>${t('password')}</label><input class="input" id="su-pw" type="password" placeholder="********"></div>
       <div class="form-group"><label>${t('confirm_pw')}</label><input class="input" id="su-pw2" type="password" placeholder="********"></div>
       <div class="form-group"><label>${t('company')} <span style="color:var(--slate-400);">(${t('optional')})</span></label><input class="input" id="su-co" placeholder=""></div>
-      <button class="btn btn-primary btn-block btn-lg" id="signup-btn" onclick="doSignUp()">${t('create_account')}</button>
+      <button class="btn btn-primary btn-block btn-lg" id="signup-btn" data-umami-event="signup-clicked" onclick="doSignUp()">${t('create_account')}</button>
       <p style="text-align:center;font-size:14px;margin-top:24px;color:var(--slate-500);">${t('have_account')} <a style="font-weight:600;color:var(--navy-700);cursor:pointer;" onclick="switchAuthTab('signin')">${t('sign_in')}</a></p>
     </div>
   </div></div>`;
@@ -2515,8 +2515,10 @@ window.doSignUp=async function(){
     if (r.pending_confirmation) {
       state.pendingEmail = r.email;
       showSignupConfirmModal(r.email);
+      try { window.umami && umami.track('signup-pending-confirm-shown'); } catch(_){}
       btn.disabled=false;btn.textContent=t('create_account');return;
     }
+    try { window.umami && umami.track('signup-success', { role: 'instructor' }); } catch(_){}
     toast(t('welcome')+(state.user&&state.user.first_name?' '+state.user.first_name:'')+'!','success');
     navigate('manage-courses');
   }catch(e){
