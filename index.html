@@ -1981,8 +1981,8 @@ async function renderDetail(app, cidOrSlug) {
       </div>
       <div class="pricing-sidebar">
         <div style="margin-bottom:20px;"><span class="price-main">${fmtPrice(c.price,c.currency)}</span>${c.original_price?`<span class="price-old">${fmtPrice(c.original_price,c.currency)}</span><span class="discount-badge">${disc}% OFF</span>`:''}</div>
-        <button class="btn btn-gold btn-block btn-lg" style="margin-bottom:12px;" onclick="handleEnroll(${c.id},${c.price},'${js(c.title)}','${js(c.currency||'USD')}','${js(c.image_url||'')}')">${t('enroll_now')}</button>
-        <button class="btn btn-secondary btn-block" onclick="handleWishlist(${c.id})">${t('add_wishlist')}</button>
+        <button class="btn btn-gold btn-block btn-lg" style="margin-bottom:12px;" data-umami-event="course-enroll-clicked" data-umami-event-slug="${js(c.slug||'')}" onclick="handleEnroll(${c.id},${c.price},'${js(c.title)}','${js(c.currency||'USD')}','${js(c.image_url||'')}')">${t('enroll_now')}</button>
+        <button class="btn btn-secondary btn-block" data-umami-event="course-wishlist-clicked" data-umami-event-slug="${js(c.slug||'')}" onclick="handleWishlist(${c.id})">${t('add_wishlist')}</button>
         <p style="font-size:12px;color:var(--slate-500);text-align:center;margin-top:12px;">${t('guarantee')}</p>
         <hr class="divider"><h4 style="font-size:15px;margin-bottom:12px;">${t('includes')}</h4>
         <ul class="includes-list"><li>${c.duration_hours||0} ${t('hours_content')}</li><li>${c.total_lessons||0} ${t('lessons')}</li><li>${(c.modules||[]).length} ${t('modules')}</li>${c.start_date?`<li>${t('starts')}: ${new Date(c.start_date).toLocaleDateString()}</li>`:''}${c.end_date?`<li>${t('ends')}: ${new Date(c.end_date).toLocaleDateString()}</li>`:''}<li>${t('lifetime')}</li><li>${t('certificate')}</li></ul>
