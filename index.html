@@ -360,6 +360,11 @@
 </style>
 <script src="https://cdn.jsdelivr.net/npm/bcryptjs@2.4.3/dist/bcrypt.min.js" integrity="sha384-qGFE4FIJLgCFuYs3nzg39XpCtvT5AZUhaBdjB3e1+vpKQa03AkyWOyBSFb9OcQ/g" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.103.0/dist/umd/supabase.js" integrity="sha384-rm08XZM5pQreOGZb7BaDgXaNmLp98HwlhS7C7puAkkSRHtyJztgFgPVcgmvCXmBt" crossorigin="anonymous"></script>
+<!-- Umami self-hosted analytics — same-origin to upskillcompass.com via the
+     analytics.upskillcompass.com subdomain. No cookies, no fingerprinting.
+     Auto-tracks pageviews via the History API hook, so pushState route
+     changes get recorded as separate views. -->
+<script defer src="https://analytics.upskillcompass.com/script.js" data-website-id="ac50a2d4-47f5-48e5-8f11-bff36e6169b8"></script>
 </head>
 <body>
 <div id="toast" class="toast"></div>
